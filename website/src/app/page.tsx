@@ -16,9 +16,15 @@ export default function Home() {
             </p>
             <p className="text-base text-stone-600 leading-relaxed max-w-xl">
               Thirty years of building companies, leading technology teams, and figuring out what comes next.
-              EE undergrad. 4.0 MBA. Three patents. Currently shipping software without writing code —
-              and teaching AI agents to do it reliably.
+              EE undergrad. 4.0 MBA. Three patents.
             </p>
+            <ul className="mt-4 space-y-2 text-sm text-stone-500 max-w-xl">
+              <li>Advising several great healthcare startups</li>
+              <li>Shipping complex software without writing code — <a href="https://smartertravelplanner.com" className="text-stone-700 hover:underline">SmarterTravelPlanner.com</a></li>
+              <li>Continuing to enhance a custom CI/CD state machine engine for high-velocity autonomous agentic coding</li>
+              <li>HOA new indentures &amp; capital projects</li>
+              <li>Planning our next travel adventures</li>
+            </ul>
             <div className="flex items-center gap-4 mt-10">
               <Link href="/work" className="inline-flex items-center gap-2 bg-stone-900 text-white px-6 py-3 text-sm font-medium hover:bg-stone-700 transition-colors">
                 See the work
