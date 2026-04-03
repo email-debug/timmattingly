@@ -12,7 +12,7 @@ export default function Home() {
             <p className="text-sm font-medium text-stone-400 tracking-widest uppercase mb-6">Ballwin, Missouri</p>
             <h1 className="text-5xl font-light text-stone-900 leading-tight mb-6">Tim Mattingly</h1>
             <p className="text-xl text-stone-500 font-light leading-relaxed mb-8">
-              I learn things. Then I build things with what I learned.
+              I solve complex problems. I build things.
             </p>
             <p className="text-base text-stone-600 leading-relaxed max-w-xl">
               Thirty years of building companies, leading technology teams, and figuring out what comes next.
@@ -37,6 +37,14 @@ export default function Home() {
       {/* Facet grid */}
       <section className="max-w-6xl mx-auto px-8 py-16 border-t border-stone-100">
         <div className="grid grid-cols-4 gap-px bg-stone-200">
+          <Link href="/work#advisor" className="bg-white p-8 hover:bg-stone-50 transition-colors group">
+            <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-4">Strategic Advisor</p>
+            <h2 className="text-lg font-medium text-stone-900 mb-3 group-hover:text-stone-600 transition-colors">Health tech & AI</h2>
+            <p className="text-sm text-stone-500 leading-relaxed">
+              Advising startups through BioSTL alongside 75+ executives. Current clients include
+              GT Diagnostics, Pulsenmore, Ayble, and Manus Neuro.
+            </p>
+          </Link>
           <Link href="/work#founder" className="bg-white p-8 hover:bg-stone-50 transition-colors group">
             <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-4">Founder</p>
             <h2 className="text-lg font-medium text-stone-900 mb-3 group-hover:text-stone-600 transition-colors">Built companies</h2>
@@ -51,14 +59,6 @@ export default function Home() {
             <p className="text-sm text-stone-500 leading-relaxed">
               Smarter Travel Planner is live. So is the AI orchestration layer that built it —
               sprint planning, quality gates, automated deployment, failure recovery.
-            </p>
-          </Link>
-          <Link href="/work#advisor" className="bg-white p-8 hover:bg-stone-50 transition-colors group">
-            <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-4">Advisor</p>
-            <h2 className="text-lg font-medium text-stone-900 mb-3 group-hover:text-stone-600 transition-colors">Built at scale</h2>
-            <p className="text-sm text-stone-500 leading-relaxed">
-              Mastercard VP. Centene Senior Director. Now advising health tech startups at BioSTL
-              with 75+ executive-level advisors.
             </p>
           </Link>
           <Link href="/work#community" className="bg-white p-8 hover:bg-stone-50 transition-colors group">
@@ -129,12 +129,14 @@ export default function Home() {
               <p className="text-sm text-stone-500">April 2026</p>
             </div>
             <div className="col-span-3">
-              <p className="text-base text-stone-600 leading-relaxed">
-                Shipping the last features on Smarter Travel Planner before demo season.
-                Advising health tech startups through BioSTL. Planning the next trip.
-                Building toward a life that works from a café in Porto as easily as it does from Ballwin.
-              </p>
-              <Link href="/now" className="text-sm text-stone-400 hover:text-stone-700 transition-colors mt-3 inline-block">
+              <ul className="space-y-2 text-base text-stone-600">
+                <li>Advising health tech startups through BioSTL — primary focus</li>
+                <li>Shipping Smarter Travel Planner toward public launch</li>
+                <li>Building a custom state machine engine for agentic CI/CD</li>
+                <li>Leading HOA capital projects and new indenture work</li>
+                <li>Planning the next trip</li>
+              </ul>
+              <Link href="/now" className="text-sm text-stone-400 hover:text-stone-700 transition-colors mt-4 inline-block">
                 Full update →
               </Link>
             </div>
