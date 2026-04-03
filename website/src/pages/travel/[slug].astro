@@ -1,0 +1,47 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const journals = await getCollection('travel');
+  return journals.map(entry => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<Base title={entry.data.title}>
+  <article class="max-w-3xl mx-auto px-8 pt-16 pb-24">
+
+    <div class="mb-12">
+      <a href="/travel" class="text-sm text-stone-400 hover:text-stone-700 transition-colors mb-6 inline-block">
+        ← Our Travels
+      </a>
+      <p class="text-xs font-medium text-stone-400 tracking-widest uppercase mb-3">
+        {entry.data.dates}
+      </p>
+      <h1 class="text-4xl font-light text-stone-900">
+        {entry.data.title}
+      </h1>
+    </div>
+
+    {entry.data.coverImage && (
+      <div class="aspect-video mb-12 overflow-hidden">
+        <img src={entry.data.coverImage} alt={entry.data.title} class="w-full h-full object-cover" />
+      </div>
+    )}
+
+    <div class="prose prose-stone prose-lg max-w-none
+      prose-headings:font-light prose-headings:text-stone-900
+      prose-p:text-stone-600 prose-p:leading-relaxed
+      prose-hr:border-stone-200
+      prose-strong:text-stone-800 prose-strong:font-medium">
+      <Content />
+    </div>
+
+  </article>
+</Base>
