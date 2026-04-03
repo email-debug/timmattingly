@@ -32,7 +32,7 @@ export default function HeroSlideshow() {
           src={img.src}
           alt={img.alt}
           fill
-          className="object-cover object-top transition-opacity"
+          className="object-cover object-center transition-opacity"
           style={{ transitionDuration: '600ms', opacity: i === current ? (fading ? 0 : 1) : 0 }}
           priority={i === 0}
           sizes="(max-width: 1200px) 40vw, 480px"
