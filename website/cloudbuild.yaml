@@ -1,0 +1,39 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'build'
+      - '-f'
+      - 'Dockerfile.prod'
+      - '-t'
+      - 'us-central1-docker.pkg.dev/timmattingly/timmattingly-web/web:$COMMIT_SHA'
+      - '-t'
+      - 'us-central1-docker.pkg.dev/timmattingly/timmattingly-web/web:latest'
+      - '.'
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'push'
+      - '--all-tags'
+      - 'us-central1-docker.pkg.dev/timmattingly/timmattingly-web/web'
+
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      - 'run'
+      - 'deploy'
+      - 'timmattingly-web'
+      - '--image=us-central1-docker.pkg.dev/timmattingly/timmattingly-web/web:$COMMIT_SHA'
+      - '--region=us-central1'
+      - '--platform=managed'
+      - '--allow-unauthenticated'
+      - '--port=8080'
+      - '--memory=512Mi'
+      - '--cpu=1'
+      - '--min-instances=0'
+      - '--max-instances=3'
+
+images:
+  - 'us-central1-docker.pkg.dev/timmattingly/timmattingly-web/web:$COMMIT_SHA'
+  - 'us-central1-docker.pkg.dev/timmattingly/timmattingly-web/web:latest'
+
+options:
+  logging: CLOUD_LOGGING_ONLY
