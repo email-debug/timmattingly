@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import Image from 'next/image';
+import HeroSlideshow from '@/components/HeroSlideshow';
 
 export default function Home() {
   return (
@@ -27,9 +29,7 @@ export default function Home() {
             </div>
           </div>
           <div className="col-span-2">
-            <div className="aspect-[3/4] bg-stone-100 flex items-end justify-center">
-              <p className="text-stone-400 text-xs pb-4">Photo coming soon</p>
-            </div>
+            <HeroSlideshow />
           </div>
         </div>
       </section>
@@ -105,8 +105,14 @@ export default function Home() {
                   that impossible emerald green, like someone had dissolved a gemstone into the water."
                 </p>
               </div>
-              <div className="aspect-video bg-stone-100 flex items-center justify-center">
-                <p className="text-stone-400 text-xs">Photo coming soon</p>
+              <div className="aspect-video relative overflow-hidden">
+                <Image
+                  src="/images/travel-adriatic-sunset.jpg"
+                  alt="Tim and Jill at sunset on the Adriatic"
+                  fill
+                  className="object-cover"
+                  sizes="300px"
+                />
               </div>
             </div>
             <p className="text-sm text-stone-400 mt-6 group-hover:text-stone-600 transition-colors">More journals →</p>
