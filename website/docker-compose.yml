@@ -1,0 +1,13 @@
+services:
+  web:
+    build: .
+    container_name: timmattingly-web
+    ports:
+      - "5200:5200"
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+    environment:
+      - NODE_ENV=development
+    restart: unless-stopped
