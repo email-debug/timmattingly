@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import HeroSlideshow from '@/components/HeroSlideshow';
+import { assets } from '@/lib/assets';
 
 export default function Home() {
   return (
@@ -10,28 +11,20 @@ export default function Home() {
         <div className="grid grid-cols-5 gap-16 items-start">
           <div className="col-span-3">
             <p className="text-sm font-medium text-stone-400 tracking-widest uppercase mb-6">Ballwin, Missouri</p>
-            <h1 className="text-5xl font-light text-stone-900 leading-tight mb-6">Tim Mattingly</h1>
-            <p className="text-xl text-stone-500 font-light leading-relaxed mb-8">
-              I solve complex problems. I build things.
+            <h1 className="text-6xl font-light text-stone-900 leading-tight mb-6">Tim Mattingly</h1>
+            <p className="text-2xl text-stone-600 font-light leading-relaxed mb-4">
+              Technology executive. 30 years building companies, leading teams, and shipping products.
             </p>
-            <p className="text-base text-stone-600 leading-relaxed max-w-xl">
-              Thirty years of building companies, leading technology teams, and figuring out what comes next.
-              EE undergrad. 4.0 MBA. Three patents.
+            <p className="text-lg text-stone-500 leading-relaxed max-w-xl mb-10">
+              Open to full-time leadership, fractional CTO/CIO, and strategic advisory roles.
             </p>
-            <ul className="mt-4 space-y-2 text-sm text-stone-500 max-w-xl">
-              <li>Advising several great healthcare startups</li>
-              <li>Shipping complex software without writing code — <a href="https://smartertravelplanner.com" className="text-stone-700 hover:underline">SmarterTravelPlanner.com</a></li>
-              <li>Continuing to enhance a custom CI/CD state machine engine for high-velocity autonomous agentic coding</li>
-              <li>HOA new indentures &amp; capital projects</li>
-              <li>Planning our next travel adventures</li>
-            </ul>
-            <div className="flex items-center gap-4 mt-10">
-              <Link href="/work" className="inline-flex items-center gap-2 bg-stone-900 text-white px-6 py-3 text-sm font-medium hover:bg-stone-700 transition-colors">
-                See the work
+            <div className="flex items-center gap-4">
+              <Link href="/experience" className="inline-flex items-center gap-2 bg-stone-900 text-white px-7 py-3.5 text-base font-medium hover:bg-stone-700 transition-colors">
+                View experience
               </Link>
-              <Link href="/contact" className="inline-flex items-center gap-2 border border-stone-300 text-stone-700 px-6 py-3 text-sm font-medium hover:border-stone-900 transition-colors">
-                Get in touch
-              </Link>
+              <a href="https://calendly.com/timmattingly" className="inline-flex items-center gap-2 border border-stone-300 text-stone-700 px-7 py-3.5 text-base font-medium hover:border-stone-900 transition-colors">
+                Schedule a call
+              </a>
             </div>
           </div>
           <div className="col-span-2">
@@ -40,112 +33,55 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Facet grid */}
-      <section className="max-w-6xl mx-auto px-8 py-16 border-t border-stone-100">
-        <div className="grid grid-cols-4 gap-px bg-stone-200">
-          <Link href="/work#advisor" className="bg-white p-8 hover:bg-stone-50 transition-colors group">
-            <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-4">Strategic Advisor</p>
-            <h2 className="text-lg font-medium text-stone-900 mb-3 group-hover:text-stone-600 transition-colors">Health tech & AI</h2>
-            <p className="text-sm text-stone-500 leading-relaxed">
-              Advising startups through BioSTL alongside 75+ executives. Current clients include
-              GT Diagnostics, Pulsenmore, Ayble, and Manus Neuro.
-            </p>
-          </Link>
-          <Link href="/work#founder" className="bg-white p-8 hover:bg-stone-50 transition-colors group">
-            <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-4">Founder</p>
-            <h2 className="text-lg font-medium text-stone-900 mb-3 group-hover:text-stone-600 transition-colors">Built companies</h2>
-            <p className="text-sm text-stone-500 leading-relaxed">
-              Equilliance to 300 people. 5 subsidiaries. Acquired 4 competitors.
-              Then, 25 years later, built a production SaaS — without writing a line of code.
-            </p>
-          </Link>
-          <Link href="/work#engineer" className="bg-white p-8 hover:bg-stone-50 transition-colors group">
-            <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-4">Engineer</p>
-            <h2 className="text-lg font-medium text-stone-900 mb-3 group-hover:text-stone-600 transition-colors">Built the system</h2>
-            <p className="text-sm text-stone-500 leading-relaxed">
-              Smarter Travel Planner is live. So is the AI orchestration layer that built it —
-              sprint planning, quality gates, automated deployment, failure recovery.
-            </p>
-          </Link>
-          <Link href="/work#community" className="bg-white p-8 hover:bg-stone-50 transition-colors group">
-            <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-4">Community</p>
-            <h2 className="text-lg font-medium text-stone-900 mb-3 group-hover:text-stone-600 transition-colors">HOA President</h2>
-            <p className="text-sm text-stone-500 leading-relaxed">
-              Yes, also that. Turns out the skills transfer:
-              stakeholders are stakeholders, budgets are budgets.
-            </p>
-          </Link>
-        </div>
-      </section>
-
-      {/* Patents + Travel row */}
-      <section className="max-w-6xl mx-auto px-8 py-8">
-        <div className="grid grid-cols-3 gap-8">
-          <div className="border border-stone-200 p-8">
-            <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-6">Patents</p>
-            <div className="space-y-6">
-              <div>
-                <p className="text-xs text-stone-400 mb-1">US11062038B2 · 2021</p>
-                <p className="text-sm text-stone-700 leading-snug">Identity & Credential Protection via Blockchain</p>
-              </div>
-              <div>
-                <p className="text-xs text-stone-400 mb-1">US20170004486A1</p>
-                <p className="text-sm text-stone-700 leading-snug">Fraud Control Based on Geolocation</p>
-              </div>
-              <div>
-                <p className="text-xs text-stone-400 mb-1">US20170270493A1</p>
-                <p className="text-sm text-stone-700 leading-snug">Point-to-Point Transaction Processing</p>
-              </div>
-            </div>
+      {/* Career highlights */}
+      <section className="max-w-6xl mx-auto px-8 py-12 border-t border-stone-100">
+        <div className="flex items-center justify-between gap-8">
+          <div className="flex flex-col items-center gap-2">
+            <Image src={assets.logo('centene.svg')} alt="Centene" width={140} height={36} className="h-8 w-auto opacity-70" />
+            <p className="text-sm text-stone-400">Sr. Director, Innovation</p>
           </div>
-          <Link href="/travel" className="col-span-2 border border-stone-200 p-8 hover:bg-stone-50 transition-colors group">
-            <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-6">Our Travels — Tim & Jill</p>
-            <div className="grid grid-cols-2 gap-6 items-start">
-              <div>
-                <h3 className="text-lg font-medium text-stone-900 mb-2 group-hover:text-stone-600 transition-colors">
-                  Ljubljana, Slovenia
-                </h3>
-                <p className="text-xs text-stone-400 mb-3">May 31 – June 10, 2025</p>
-                <p className="text-sm text-stone-500 leading-relaxed">
-                  "The Ljubljanica River was the first thing that stopped me in my tracks —
-                  that impossible emerald green, like someone had dissolved a gemstone into the water."
-                </p>
-              </div>
-              <div className="aspect-video relative overflow-hidden">
-                <Image
-                  src="/images/travel-adriatic-sunset.jpg"
-                  alt="Tim and Jill at sunset on the Adriatic"
-                  fill
-                  className="object-cover"
-                  sizes="300px"
-                />
-              </div>
-            </div>
-            <p className="text-sm text-stone-400 mt-6 group-hover:text-stone-600 transition-colors">More journals →</p>
-          </Link>
+          <div className="flex flex-col items-center gap-2">
+            <Image src={assets.logo('mastercard.svg')} alt="Mastercard" width={140} height={36} className="h-8 w-auto opacity-70" />
+            <p className="text-sm text-stone-400">VP Strategic Partnerships</p>
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <Image src={assets.logo('EquillianceLogo-2412x1337.jpg')} alt="Equilliance" width={140} height={36} className="h-8 w-auto opacity-70" />
+            <p className="text-sm text-stone-400">President & Founder</p>
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <Image src={assets.logo('biostl.svg')} alt="BioSTL" width={80} height={36} className="h-8 w-auto opacity-70" />
+            <p className="text-sm text-stone-400">Strategic Advisor</p>
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <p className="text-xl font-medium text-stone-500">STP</p>
+            <p className="text-sm text-stone-400">Founder & Builder</p>
+          </div>
         </div>
       </section>
 
-      {/* Now strip */}
-      <section className="max-w-6xl mx-auto px-8 py-8">
-        <div className="border border-stone-200 p-8">
-          <div className="grid grid-cols-4 gap-8 items-start">
-            <div>
-              <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-3">Now</p>
-              <p className="text-sm text-stone-500">April 2026</p>
-            </div>
-            <div className="col-span-3">
-              <ul className="space-y-2 text-base text-stone-600">
-                <li>Advising health tech startups through BioSTL — primary focus</li>
-                <li>Shipping Smarter Travel Planner toward public launch</li>
-                <li>Building a custom state machine engine for agentic CI/CD</li>
-                <li>Leading HOA capital projects and new indenture work</li>
-                <li>Planning the next trip</li>
-              </ul>
-              <Link href="/now" className="text-sm text-stone-400 hover:text-stone-700 transition-colors mt-4 inline-block">
-                Full update →
-              </Link>
-            </div>
+      {/* What I bring */}
+      <section className="max-w-6xl mx-auto px-8 py-16 border-t border-stone-100">
+        <div className="grid grid-cols-3 gap-px bg-stone-200">
+          <div className="bg-white p-10">
+            <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-4">Enterprise Leadership</p>
+            <p className="text-base text-stone-600 leading-relaxed">
+              Built and led technology organizations at Centene and Mastercard. Three patents.
+              Enterprise innovation at scale — compliance, security, stakeholder management.
+            </p>
+          </div>
+          <div className="bg-white p-10">
+            <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-4">Builder</p>
+            <p className="text-base text-stone-600 leading-relaxed">
+              Grew Equilliance from startup to 300 people across 5 subsidiaries. Acquired 4 competitors.
+              Recently shipped a production SaaS from scratch.
+            </p>
+          </div>
+          <div className="bg-white p-10">
+            <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-4">AI-Native</p>
+            <p className="text-base text-stone-600 leading-relaxed">
+              Built a custom AI orchestration engine that ships production software autonomously.
+              Sprint planning, quality gates, parallel agents, failure recovery — all automated.
+            </p>
           </div>
         </div>
       </section>
