@@ -201,7 +201,7 @@ export default function Experience() {
             <Image src={assets.logo('manus-neuro.png')} alt="Manus Neuro" width={120} height={80} className="h-10 w-auto" />
           </div>
           <div className="border border-stone-200 p-6 flex items-center justify-center">
-            <Image src={assets.logo('neuro360.png')} alt="Neuro360" width={100} height={40} className="h-10 w-auto" />
+            <Image src={assets.logo('neuro360.png')} alt="Neuro360" width={100} height={40} className="h-10 w-auto" style={{ width: 'auto' }} />
           </div>
         </div>
       </div>
