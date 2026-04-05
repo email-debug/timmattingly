@@ -1,66 +1,81 @@
-import Image from 'next/image';
-import { assets } from '@/lib/assets';
+import HeroSlideshow from '@/components/HeroSlideshow';
 import ScrollGallery from '@/components/ScrollGallery';
+import { assets } from '@/lib/assets';
 
-// Travel gallery — add new images here as they're uploaded to GCS
+// Travel gallery — countries included in labels
 const travelPhotos = [
-  { src: assets.travel('travel-adriatic-sunset.jpg'), label: 'Adriatic Coast' },
-  { src: assets.travel('travel-cortina-group.jpg'), label: 'Cortina d\'Ampezzo' },
-  { src: assets.travel('travel-venice.jpg'), label: 'Venice' },
-  { src: assets.travel('travel-dolomites-seceda.jpg'), label: 'Dolomites' },
-  { src: assets.travel('travel-lisbon-sunset.jpg'), label: 'Lisbon' },
-  { src: assets.travel('travel-moselle.jpg'), label: 'Moselle Valley' },
+  { src: assets.travel('travel-adriatic-sunset.jpg'), label: 'Adriatic Coast, Croatia' },
+  { src: assets.travel('travel-cortina-group.jpg'), label: 'Cortina d\'Ampezzo, Italy' },
+  { src: assets.travel('travel-venice.jpg'), label: 'Venice, Italy' },
+  { src: assets.travel('travel-dolomites-seceda.jpg'), label: 'Dolomites, Italy' },
+  { src: assets.travel('travel-lisbon-sunset.jpg'), label: 'Lisbon, Portugal' },
+  { src: assets.travel('travel-moselle.jpg'), label: 'Moselle Valley, Germany' },
   { src: assets.travel('travel-slovenia-waterfall.jpg'), label: 'Slovenia' },
   { src: assets.hobby('hobby-truffles.jpg'), label: 'Truffle Hunting, Italy' },
 ];
 
-// Interest photos — add new images here as they're uploaded to GCS (hobbies/ folder)
+// Interest photos
 const interestPhotos = [
-  { src: assets.hobby('hobby-paragliding.jpg'), label: 'Paragliding' },
-  { src: assets.hobby('hobby-scuba.jpg'), label: 'Scuba' },
+  { src: assets.hobby('hobby-paragliding.jpg'), label: 'Paragliding, Switzerland' },
+  { src: assets.hobby('hobby-scuba.jpg'), label: 'Scuba Diving, Caribbean' },
 ];
 
 export default function About() {
   return (
     <div className="max-w-6xl mx-auto px-8 pt-16 pb-24">
-      {/* Header */}
-      <div className="mb-16">
-        <p className="text-sm font-medium text-stone-400 tracking-widest uppercase mb-4">About</p>
-        <h1 className="text-5xl font-light text-stone-900 mb-4">The short version</h1>
+      {/* Header + Slideshow */}
+      <div className="grid grid-cols-5 gap-16 mb-20">
+        <div className="col-span-3">
+          <p className="text-sm font-medium text-stone-400 tracking-widest uppercase mb-4">About</p>
+          <h1 className="text-5xl font-light text-stone-900 mb-6">Solving problems, building things</h1>
+          <div className="space-y-5 text-lg text-stone-600 leading-relaxed">
+            <p>
+              The throughline across 30 years is simple: find a hard problem, build something to solve it, learn everything along the way. That pattern has taken me from electrical engineering to founding a 300-person company, from Fortune 25 innovation labs to shipping AI-built software.
+            </p>
+            <p>
+              I started as an EE, moved into IT leadership at EY and defense electronics, then co-founded a mortgage technology company. At 30 I started Equilliance — grew it from nothing to 300 employees and 5 subsidiaries, acquired 4 competitors, and ran the whole thing for 8 years.
+            </p>
+            <p>
+              Mastercard recruited me to lead strategic partnerships across the payments ecosystem. That led to Centene, where I ran enterprise innovation for a $144B Fortune 25 healthcare company — AI, blockchain, automation, three patents.
+            </p>
+            <p>
+              Two and a half years ago I left corporate. Not retirement — a reset. I took over a dormant advisory practice at BioSTL and rebuilt it from 10 active advisors to 100+. I built a production SaaS application and the AI orchestration engine that made it possible — without writing code.
+            </p>
+            <p className="text-stone-900 font-medium">
+              Now I'm looking for the next hard problem. Full-time leadership, fractional CTO, strategic advisory — I'm most useful where technology strategy meets execution.
+            </p>
+          </div>
+        </div>
+        <div className="col-span-2 pt-12">
+          <HeroSlideshow />
+        </div>
       </div>
 
-      {/* Story */}
-      <div className="grid grid-cols-3 gap-16 mb-20">
-        <div className="col-span-2 space-y-6 text-lg text-stone-600 leading-relaxed">
-          <p>
-            I spent 30 years building companies and leading technology teams — from startups I founded
-            to Fortune 25 enterprises. Electrical engineer by training, MBA by choice, builder by nature.
-          </p>
-          <p>
-            Two and a half years ago I left corporate. Not because the work wasn't interesting, but because
-            I wanted to build things on my own terms. The result so far: a production SaaS application
-            and the AI orchestration system that made it possible — both built without writing a line of code.
-          </p>
-          <p>
-            I'm not a developer. I'm a technical leader who figured out how to make AI agents
-            ship reliable software. That turns out to be a useful skill.
-          </p>
-          <p>
-            Now I split my time between advising healthcare startups, building software,
-            and figuring out what comes next. Preferably from a café somewhere interesting.
+      {/* What drives me — three pillars */}
+      <div className="grid grid-cols-4 gap-px bg-stone-200 mb-20">
+        <div className="bg-white p-10">
+          <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-4">Building</p>
+          <p className="text-base text-stone-600 leading-relaxed">
+            Companies, teams, products, systems. I've built from zero to 300 people and from blank repo to production SaaS. The scale changes; the instinct doesn't.
           </p>
         </div>
-        <div className="space-y-4">
-          <div className="aspect-[3/2] relative overflow-hidden">
-            <Image
-              src={assets.headshot('headshot-olympics.jpg')}
-              alt="Tim at Milano Cortina 2026"
-              fill
-              className="object-cover"
-              sizes="320px"
-            />
-          </div>
-          <p className="text-sm text-stone-400">Milano Cortina 2026</p>
+        <div className="bg-white p-10">
+          <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-4">Problem Solving</p>
+          <p className="text-base text-stone-600 leading-relaxed">
+            Three patents. Enterprise innovation at Fortune 25 scale. M&A integration. Practice turnarounds. I gravitate toward problems other people avoid.
+          </p>
+        </div>
+        <div className="bg-white p-10">
+          <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-4">Learning</p>
+          <p className="text-base text-stone-600 leading-relaxed">
+            EE to MBA. Mortgage tech to payments to healthcare. AI orchestration at 53. Every chapter required learning a new domain from scratch — and that's the part I like most.
+          </p>
+        </div>
+        <div className="bg-white p-10">
+          <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-4">Exploring</p>
+          <p className="text-base text-stone-600 leading-relaxed">
+            20+ countries with my wife Jill. Paragliding in the Alps, scuba in the Caribbean, truffle hunting in Tuscany. Curiosity doesn't stop at the office door.
+          </p>
         </div>
       </div>
 
@@ -76,22 +91,22 @@ export default function About() {
 
       {/* Interests */}
       <div className="border-t border-stone-200 pt-16 mb-20">
-        <p className="text-sm font-medium text-stone-400 tracking-widest uppercase mb-4">Interests</p>
+        <p className="text-sm font-medium text-stone-400 tracking-widest uppercase mb-4">Beyond Work</p>
         <p className="text-base text-stone-500 mb-8 max-w-xl">
-          Scuba, snow skiing, wine, gardening, and travel — usually all in the same trip.
+          Scuba, snow skiing, paragliding, wine, gardening, and travel — usually all in the same trip.
         </p>
         <ScrollGallery photos={interestPhotos} height={280} speed={0.4} />
       </div>
 
-      {/* Community */}
+      {/* Community + Location */}
       <div className="border-t border-stone-200 pt-16">
         <div className="grid grid-cols-3 gap-16">
           <div>
             <p className="text-sm font-medium text-stone-400 tracking-widest uppercase mb-4">Community</p>
             <p className="text-lg font-medium text-stone-700 mb-2">HOA President</p>
             <p className="text-base text-stone-500 leading-relaxed">
-              Yes, also that. Leading new indentures and capital projects for the neighborhood.
-              Turns out the skills transfer — stakeholders are stakeholders, budgets are budgets.
+              Leading new indentures and capital projects for the neighborhood.
+              Stakeholders are stakeholders, budgets are budgets — the skills transfer.
             </p>
           </div>
           <div>
@@ -103,10 +118,10 @@ export default function About() {
             </p>
           </div>
           <div>
-            <p className="text-sm font-medium text-stone-400 tracking-widest uppercase mb-4">Making Things</p>
+            <p className="text-sm font-medium text-stone-400 tracking-widest uppercase mb-4">What's Next</p>
             <p className="text-base text-stone-500 leading-relaxed">
-              Building things that work. Making complex problems simple.
-              Always planning the next trip.
+              Looking for the next hard problem to solve. Full-time, fractional, or advisory —
+              wherever technology leadership meets real execution challenges.
             </p>
           </div>
         </div>
