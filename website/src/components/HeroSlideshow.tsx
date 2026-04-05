@@ -2,11 +2,13 @@
 
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import { assets } from '@/lib/assets';
 
+// Landscape images — light crop only (3:2 container), never portrait-crop
 const images = [
-  { src: '/images/headshot-olympics.jpg', alt: 'Tim at Milano Cortina 2026', position: '50% 20%' },
-  { src: '/images/headshot-alps.jpg', alt: 'Tim in the Alps', position: '30% 55%' },
-  { src: '/images/headshot-lisbon.jpg', alt: 'Tim in Lisbon', position: '40% 15%' },
+  { src: assets.headshot('headshot-olympics.jpg'), alt: 'Tim at Milano Cortina 2026', position: '70% 25%' },
+  { src: assets.headshot('headshot-alps.jpg'), alt: 'Tim in the Alps', position: '30% 25%' },
+  { src: assets.headshot('headshot-lisbon.jpg'), alt: 'Tim in Lisbon', position: '55% 20%' },
 ];
 
 export default function HeroSlideshow() {
@@ -25,7 +27,7 @@ export default function HeroSlideshow() {
   }, []);
 
   return (
-    <div className="aspect-[3/4] relative overflow-hidden bg-stone-100">
+    <div className="aspect-[3/2] relative overflow-hidden">
       {images.map((img, i) => (
         <Image
           key={img.src}

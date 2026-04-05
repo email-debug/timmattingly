@@ -33,29 +33,48 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Career highlights */}
-      <section className="max-w-6xl mx-auto px-8 py-12 border-t border-stone-100">
-        <div className="flex items-center justify-between gap-8">
-          <div className="flex flex-col items-center gap-2">
-            <Image src={assets.logo('centene.svg')} alt="Centene" width={140} height={36} className="h-8 w-auto opacity-70" />
-            <p className="text-sm text-stone-400">Sr. Director, Innovation</p>
-          </div>
-          <div className="flex flex-col items-center gap-2">
-            <Image src={assets.logo('mastercard.svg')} alt="Mastercard" width={140} height={36} className="h-8 w-auto opacity-70" />
-            <p className="text-sm text-stone-400">VP Strategic Partnerships</p>
-          </div>
-          <div className="flex flex-col items-center gap-2">
-            <Image src={assets.logo('EquillianceLogo-2412x1337.jpg')} alt="Equilliance" width={140} height={36} className="h-8 w-auto opacity-70" />
-            <p className="text-sm text-stone-400">President & Founder</p>
-          </div>
-          <div className="flex flex-col items-center gap-2">
-            <Image src={assets.logo('biostl.svg')} alt="BioSTL" width={80} height={36} className="h-8 w-auto opacity-70" />
-            <p className="text-sm text-stone-400">Strategic Advisor</p>
-          </div>
-          <div className="flex flex-col items-center gap-2">
-            <p className="text-xl font-medium text-stone-500">STP</p>
-            <p className="text-sm text-stone-400">Founder & Builder</p>
-          </div>
+      {/* Career highlights — scrolling logo strip */}
+      <section className="border-t border-stone-100 py-12 overflow-hidden">
+        <div className="flex animate-scroll gap-16 w-max">
+          {[...Array(2)].map((_, copy) => (
+            <div key={copy} className="flex gap-16 shrink-0">
+              <div className="flex flex-col items-center gap-2 shrink-0 w-56">
+                <div className="h-10 flex items-center">
+                  <Image src={assets.logo('centene.svg')} alt="Centene" width={160} height={40} className="h-9 w-auto" style={{ width: 'auto' }} />
+                </div>
+                <p className="text-sm font-medium text-stone-600 text-center">Enterprise Innovation, Digital Strategy</p>
+                <p className="text-xs text-stone-400 text-center">$160B Fortune 25 Healthcare Company</p>
+              </div>
+              <div className="flex flex-col items-center gap-2 shrink-0 w-56">
+                <div className="h-10 flex items-center">
+                  <Image src={assets.logo('mastercard.svg')} alt="Mastercard" width={200} height={40} className="h-10 w-auto" style={{ width: 'auto' }} />
+                </div>
+                <p className="text-sm font-medium text-stone-600 text-center">VP Strategic Partnerships</p>
+                <p className="text-xs text-stone-400 text-center">Global Team</p>
+              </div>
+              <div className="flex flex-col items-center gap-2 shrink-0 w-56">
+                <div className="h-10 flex items-center">
+                  <Image src={assets.logo('EquillianceLogo-2412x1337.jpg')} alt="Equilliance" width={180} height={40} className="h-10 w-auto" style={{ width: 'auto' }} />
+                </div>
+                <p className="text-sm font-medium text-stone-600 text-center">Founder & President</p>
+                <p className="text-xs text-stone-400 text-center">300 Employee Real Estate Services Family of Companies</p>
+              </div>
+              <div className="flex flex-col items-center gap-2 shrink-0 w-56">
+                <div className="h-10 flex items-center">
+                  <Image src={assets.logo('biostl.svg')} alt="BioSTL" width={120} height={40} className="h-9 w-auto" style={{ width: 'auto' }} />
+                </div>
+                <p className="text-sm font-medium text-stone-600 text-center">Head of Innovation Advisory</p>
+                <p className="text-xs text-stone-400 text-center">Executive Services for Global Healthcare Startups</p>
+              </div>
+              <div className="flex flex-col items-center gap-2 shrink-0 w-56">
+                <div className="h-10 flex items-center">
+                  <Image src={assets.logo('STP Logo.png')} alt="Smarter Travel Planner" width={0} height={0} sizes="200px" style={{ height: '36px', width: 'auto' }} />
+                </div>
+                <p className="text-sm font-medium text-stone-600 text-center">Founder & Builder</p>
+                <p className="text-xs text-stone-400 text-center">AI Concierge Travel Planning System — Nearing Launch</p>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
