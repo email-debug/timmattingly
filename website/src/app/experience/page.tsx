@@ -46,7 +46,7 @@ export default function Experience() {
         <div className="grid grid-cols-4 gap-8 py-10 border-t border-stone-200">
           <div className="space-y-4">
             <div className="h-12 flex items-center">
-              <Image src={assets.logo('STP Logo.png')} alt="Smarter Travel Planner" width={220} height={48} className="h-10 w-auto" />
+              <Image src={assets.logo('STP Logo.png')} alt="Smarter Travel Planner" width={0} height={0} sizes="300px" style={{ height: '40px', width: 'auto' }} />
             </div>
             <p className="text-base text-stone-400">2024 – Present</p>
           </div>
@@ -126,7 +126,7 @@ export default function Experience() {
         <div className="grid grid-cols-4 gap-8 py-10 border-t border-stone-200">
           <div className="space-y-4">
             <div className="h-12 flex items-center">
-              <Image src={assets.logo('EquillianceLogo-2412x1337.jpg')} alt="Equilliance Companies" width={220} height={48} className="h-10 w-auto" />
+              <Image src={assets.logo('horz.jpg')} alt="Equilliance Companies" width={220} height={48} className="h-10 w-auto" />
             </div>
             <p className="text-base text-stone-400">2003 – 2011</p>
           </div>
@@ -188,15 +188,21 @@ export default function Experience() {
           Technology strategy and architecture guidance to healthcare startups at the pre-seed through Series A stage.
         </p>
         <div className="grid grid-cols-5 gap-4">
-          {['GT Diagnostics', 'Pulsenmore', 'Ayble Health', 'Manus Neuro', 'Neuro360'].map((client) => (
-            <div key={client} className="border border-stone-200 p-6 flex items-center justify-center">
-              {client === 'Neuro360' ? (
-                <Image src={assets.logo('neuro360.png')} alt="Neuro360" width={100} height={40} className="h-10 w-auto" />
-              ) : (
-                <p className="text-base font-medium text-stone-700">{client}</p>
-              )}
-            </div>
-          ))}
+          <div className="border border-stone-200 p-6 flex items-center justify-center">
+            <Image src={assets.logo('gt-diagnostics-icon.png')} alt="GT Diagnostics" width={48} height={48} className="h-10 w-auto" />
+          </div>
+          <div className="border border-stone-200 p-6 flex items-center justify-center">
+            <Image src={assets.logo('pulsenmore.png')} alt="Pulsenmore" width={180} height={48} className="h-8 w-auto" />
+          </div>
+          <div className="border border-stone-900 bg-stone-900 p-6 flex items-center justify-center">
+            <Image src={assets.logo('ayble-health.png')} alt="Ayble Health" width={180} height={80} className="h-10 w-auto" />
+          </div>
+          <div className="border border-stone-200 p-6 flex items-center justify-center">
+            <Image src={assets.logo('manus-neuro.png')} alt="Manus Neuro" width={120} height={80} className="h-10 w-auto" />
+          </div>
+          <div className="border border-stone-200 p-6 flex items-center justify-center">
+            <Image src={assets.logo('neuro360.png')} alt="Neuro360" width={100} height={40} className="h-10 w-auto" />
+          </div>
         </div>
       </div>
 
