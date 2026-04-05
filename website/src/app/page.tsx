@@ -45,7 +45,7 @@ export default function Home() {
             <p className="text-sm text-stone-400">VP Strategic Partnerships</p>
           </div>
           <div className="flex flex-col items-center gap-2">
-            <Image src={assets.logo('horz.jpg')} alt="Equilliance" width={140} height={36} className="h-8 w-auto opacity-70" />
+            <Image src={assets.logo('EquillianceLogo-2412x1337.jpg')} alt="Equilliance" width={140} height={36} className="h-8 w-auto opacity-70" />
             <p className="text-sm text-stone-400">President & Founder</p>
           </div>
           <div className="flex flex-col items-center gap-2">

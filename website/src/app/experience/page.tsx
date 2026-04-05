@@ -126,7 +126,7 @@ export default function Experience() {
         <div className="grid grid-cols-4 gap-8 py-10 border-t border-stone-200">
           <div className="space-y-4">
             <div className="h-12 flex items-center">
-              <Image src={assets.logo('horz.jpg')} alt="Equilliance Companies" width={220} height={48} className="h-10 w-auto" />
+              <Image src={assets.logo('EquillianceLogo-2412x1337.jpg')} alt="Equilliance Companies" width={220} height={48} className="h-10 w-auto" />
             </div>
             <p className="text-base text-stone-400">2003 – 2011</p>
           </div>
