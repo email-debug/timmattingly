@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "timmattingly-website",
+      "runtimeExecutable": "docker",
+      "runtimeArgs": ["compose", "-f", "website/docker-compose.yml", "up"],
+      "port": 5200,
+      "autoPort": false
+    }
+  ]
+}

@@ -16,7 +16,7 @@ You are Tim's **strategy and communications partner**. This is NOT a code projec
 4. **Competitive analysis** — Market landscape, pricing, positioning
 5. **Communications** — PR outreach, social media, speaking opportunities
 
-**Never write code in this workspace.** If something needs code, it belongs in `/stp/v2/`.
+**Strategy and comms work does not involve code.** Website code lives in `website/` — see the Website Development section below.
 
 ---
 
@@ -125,6 +125,31 @@ TimCo/
 4. **Conference organizers** — "Who can speak about AI building real software?"
 5. **Potential fractional CTO clients** — "I need technical leadership but can't afford a full-time CTO"
 6. **Tim's LinkedIn network** — 2,855 execs who need to see him as the AI-native CTO
+
+---
+
+## Website Development (timmattingly.com)
+
+**Tech stack:** Next.js 15 + TypeScript + Tailwind CSS, deployed via Cloud Build to Cloud Run.
+
+**Dev environment:** Docker container (`timmattingly-web`) on **port 5200**.
+- Preview tools can only screenshot servers they started via `preview_start`
+- Use the `timmattingly-website` config in `.claude/launch.json`
+- Source is volume-mounted — edits to `website/` are reflected via HMR
+- **If port 5200 is already in use:** Ask Tim before stopping anything. Say: "Port 5200 is in use — can I restart the container through preview tools so I can verify visually?"
+- If Tim approves: `docker-compose -f website/docker-compose.yml down`, then `preview_start`
+- If Tim declines: skip visual verification — commit your changes and Tim will review at localhost:5200 or after a prod push
+
+**Deployment:** Push to `prod` branch triggers Cloud Build → Cloud Run at timmattingly.com.
+- `master` is the working branch (no deploy trigger)
+- `prod` is the deploy branch — only push when Tim approves
+
+**Git workflow:**
+- Commit to `master` freely (atomic commits, semantic prefixes)
+- `git push origin prod` only for deploys, with Tim's approval
+- Run `tsc --noEmit` before committing
+
+**Never modify without approval:** `cloudbuild.yaml`, `.env`, `website/Dockerfile.prod`
 
 ---
 

@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Tim Mattingly',
-  description: 'Founder. Engineer. Advisor. Husband. Occasional HOA President.',
+  description: 'Technology executive. 30 years building companies, teams, and products. Open to leadership, fractional CTO/CIO, and advisory roles.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
