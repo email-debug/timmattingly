@@ -5,36 +5,35 @@ export default function Experience() {
   return (
     <div className="max-w-6xl mx-auto px-8 pt-16 pb-24">
       {/* Header */}
-      <div className="grid grid-cols-3 gap-16 mb-16">
-        <div className="col-span-2">
+      <div className="grid grid-cols-2 gap-16 mb-16 items-center">
+        <div>
           <p className="text-sm font-medium text-stone-400 tracking-widest uppercase mb-4">Experience</p>
-          <h1 className="text-5xl font-light text-stone-900 mb-4">30 years of building</h1>
-          <p className="text-xl text-stone-500 font-light leading-relaxed mb-6">
-            From electrical engineer to Fortune 25 innovation leader to founder.
-            Now available for full-time leadership, fractional CTO/CIO, and strategic advisory.
-          </p>
+          <h1 className="text-5xl font-light text-stone-900 mb-5">30 years of building</h1>
+          <p className="text-lg text-stone-600 font-light mb-1">From Startups to Fortune 25</p>
+          <p className="text-lg text-stone-600 font-light mb-1">Experienced Leader, MBA, Electrical Engineer</p>
+          <p className="text-lg text-stone-500 font-light mb-8">Available for full-time leadership, fractional executive and strategic advisory.</p>
           <a href={assets.doc('resume.pdf')} className="inline-flex items-center gap-2 text-base text-stone-500 hover:text-stone-900 transition-colors">
             Download resume (PDF) →
           </a>
         </div>
 
         {/* Credential strip */}
-        <div className="border-l border-stone-200 pl-16 flex flex-col justify-center gap-8">
-          <div>
-            <p className="text-3xl font-light text-stone-900">Fortune 25</p>
-            <p className="text-sm text-stone-400 mt-1">Centene Corporation — $144B revenue</p>
+        <div className="border-l border-stone-200 pl-12 flex flex-col gap-5">
+          <div className="flex items-baseline gap-4">
+            <p className="text-2xl font-light text-stone-900 whitespace-nowrap w-36 shrink-0">Fortune 25</p>
+            <p className="text-sm text-stone-400 leading-snug">Centene Corporation — $144B revenue</p>
           </div>
-          <div>
-            <p className="text-3xl font-light text-stone-900">Fortune 500</p>
-            <p className="text-sm text-stone-400 mt-1">Mastercard — VP Strategic Partnerships</p>
+          <div className="flex items-baseline gap-4">
+            <p className="text-2xl font-light text-stone-900 whitespace-nowrap w-36 shrink-0">Fortune 500</p>
+            <p className="text-sm text-stone-400 leading-snug">Mastercard — VP Strategic Partnerships</p>
           </div>
-          <div>
-            <p className="text-3xl font-light text-stone-900">300 people</p>
-            <p className="text-sm text-stone-400 mt-1">Founded & grew Equilliance, acquired 4 competitors</p>
+          <div className="flex items-baseline gap-4">
+            <p className="text-2xl font-light text-stone-900 whitespace-nowrap w-36 shrink-0">300 people</p>
+            <p className="text-sm text-stone-400 leading-snug">Founded & grew Equilliance, acquired 4 competitors</p>
           </div>
-          <div>
-            <p className="text-3xl font-light text-stone-900">3 patents</p>
-            <p className="text-sm text-stone-400 mt-1">Blockchain identity, fraud prevention, payments</p>
+          <div className="flex items-baseline gap-4">
+            <p className="text-2xl font-light text-stone-900 whitespace-nowrap w-36 shrink-0">3 patents</p>
+            <p className="text-sm text-stone-400 leading-snug">Blockchain identity, fraud prevention, payments</p>
           </div>
         </div>
       </div>
@@ -198,39 +197,33 @@ export default function Experience() {
 
       {/* Advisory Clients */}
       <div className="mb-20">
-        <div className="flex items-center gap-4 mb-4">
+        <div className="flex items-center gap-4 mb-6">
           <p className="text-sm font-medium text-stone-400 tracking-widest uppercase">Advisory Clients</p>
           <span className="text-sm text-stone-300">via</span>
           <Image src={assets.logo('biostl.svg')} alt="BioSTL" width={90} height={28} className="h-6 w-auto" />
         </div>
-        <p className="text-base text-stone-500 mb-8">
-          A sample of a few of my favorite clients.
-        </p>
-        <div className="grid grid-cols-5 gap-4">
-          <div className="border border-stone-200 p-6">
-            <div className="relative h-24">
-              <Image src={assets.logo('gt-diagnostics-icon.png')} alt="GT Diagnostics" fill className="object-contain" />
-            </div>
-          </div>
-          <div className="border border-stone-200 p-6">
-            <div className="relative h-24">
-              <Image src={assets.logo('pulsenmore.png')} alt="Pulsenmore" fill className="object-contain" />
-            </div>
-          </div>
-          <div className="border border-stone-900 bg-stone-900 p-6">
-            <div className="relative h-24">
-              <Image src={assets.logo('ayble-health.png')} alt="Ayble Health" fill className="object-contain" />
-            </div>
-          </div>
-          <div className="border border-stone-200 p-6">
-            <div className="relative h-24">
-              <Image src={assets.logo('manus-neuro.png')} alt="Manus Neuro" fill className="object-contain" />
-            </div>
-          </div>
-          <div className="border border-stone-200 p-6">
-            <div className="relative h-24">
-              <Image src={assets.logo('neuro360.png')} alt="Neuro360" fill className="object-contain" />
-            </div>
+        <div className="overflow-hidden border-t border-b border-stone-100 py-6">
+          <div className="flex gap-12 animate-scroll" style={{ width: 'max-content' }}>
+            {/* First pass */}
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('gt-diagnostics.png')} alt="GT Diagnostics" width={240} height={56} className="h-12 w-auto" /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('pulsenmore.png')} alt="Pulsenmore" width={180} height={56} className="h-10 w-auto" /></div>
+            <div className="flex items-center justify-center h-14 px-6 bg-stone-900 rounded"><Image src={assets.client('ayble-health.png')} alt="Ayble Health" width={160} height={56} className="h-10 w-auto" /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('manus-neuro.jpg')} alt="Manus Neuro" width={180} height={56} className="h-10 w-auto" /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('cergenx.png')} alt="CergenX" width={200} height={56} className="h-10 w-auto" /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('incision.png')} alt="Incision" width={200} height={56} className="h-10 w-auto" /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('pragmaclin.png')} alt="PragmaClin" width={200} height={56} className="h-10 w-auto" /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('sayvant.jpg')} alt="Sayvant" width={180} height={56} className="h-10 w-auto" /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('sober-sidekick.jpg')} alt="Sober Sidekick" width={200} height={56} className="h-10 w-auto" /></div>
+            {/* Duplicate for seamless loop */}
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('gt-diagnostics.png')} alt="GT Diagnostics" width={240} height={56} className="h-12 w-auto" /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('pulsenmore.png')} alt="Pulsenmore" width={180} height={56} className="h-10 w-auto" /></div>
+            <div className="flex items-center justify-center h-14 px-6 bg-stone-900 rounded"><Image src={assets.client('ayble-health.png')} alt="Ayble Health" width={160} height={56} className="h-10 w-auto" /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('manus-neuro.jpg')} alt="Manus Neuro" width={180} height={56} className="h-10 w-auto" /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('cergenx.png')} alt="CergenX" width={200} height={56} className="h-10 w-auto" /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('incision.png')} alt="Incision" width={200} height={56} className="h-10 w-auto" /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('pragmaclin.png')} alt="PragmaClin" width={200} height={56} className="h-10 w-auto" /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('sayvant.jpg')} alt="Sayvant" width={180} height={56} className="h-10 w-auto" /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('sober-sidekick.jpg')} alt="Sober Sidekick" width={200} height={56} className="h-10 w-auto" /></div>
           </div>
         </div>
       </div>

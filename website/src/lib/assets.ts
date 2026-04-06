@@ -7,5 +7,6 @@ export const assets = {
   hobby: (name: string) => `${BUCKET}/hobbies/${name}`,
   professional: (name: string) => `${BUCKET}/professional/${name}`,
   logo: (name: string) => `${BUCKET}/logos/${name}`,
+  client: (name: string) => `${BUCKET}/logos/clients/${name}`,
   doc: (name: string) => `${BUCKET}/docs/${name}`,
 } as const;
