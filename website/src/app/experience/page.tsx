@@ -45,11 +45,11 @@ export default function Experience() {
         {/* Current — STP / AI orchestration */}
         <div className="grid grid-cols-4 gap-8 py-7 border-t border-stone-200">
           <div className="space-y-4">
-            <div className="h-12 flex items-center">
+            <div className="flex items-center">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={assets.logo('STP Logo.png')} alt="Smarter Travel Planner" style={{ height: '40px', width: 'auto' }} />
+              <img src={assets.logo('STP Logo.png')} alt="Smarter Travel Planner" style={{ width: '200px', height: 'auto' }} />
             </div>
-            <p className="text-base text-stone-400">2024 – Present</p>
+            <p className="text-base text-stone-400">2026 – Present</p>
           </div>
           <div className="col-span-3">
             <p className="text-lg font-medium text-stone-700 mb-3">Founder — AI-Orchestrated SaaS</p>
