@@ -159,48 +159,57 @@ export default function Experience() {
 
         {/* Earlier Career */}
         <div className="grid grid-cols-4 gap-8 py-10 border-t border-stone-200">
-          <div className="space-y-4">
-            <div className="h-12 flex items-center gap-4 flex-wrap">
-              <Image src={assets.logo('ey.svg')} alt="EY" width={70} height={48} className="h-9 w-auto" />
-              <Image src={assets.logo('sypris.jpg')} alt="Sypris Electronics" width={140} height={48} className="h-8 w-auto" />
-              <Image src={assets.logo('berg.jpg')} alt="Berg Electronics" width={100} height={48} className="h-8 w-auto" />
-            </div>
+          <div>
             <p className="text-base text-stone-400">1994 – 1999</p>
           </div>
-          <div className="col-span-3">
-            <p className="text-base text-stone-600 leading-relaxed">
-              IT leadership and engineering roles at EY, Sypris Electronics, and Berg Electronics.
-              Started as an electrical engineer, moved quickly into technology management.
-            </p>
+          <div className="col-span-3 space-y-8">
+            <div className="flex items-start gap-8">
+              <div className="w-28 shrink-0 flex items-center pt-0.5">
+                <Image src={assets.logo('berg.jpg')} alt="Berg Electronics" width={100} height={40} className="h-8 w-auto" />
+              </div>
+              <p className="text-base text-stone-600 leading-relaxed">Progressed from entry level to global technology leadership in 4 years.</p>
+            </div>
+            <div className="flex items-start gap-8">
+              <div className="w-28 shrink-0 flex items-center pt-0.5">
+                <Image src={assets.logo('sypris.jpg')} alt="Sypris Electronics" width={120} height={40} className="h-8 w-auto" />
+              </div>
+              <p className="text-base text-stone-600 leading-relaxed">Led the consolidation of IT services across 6 subsidiaries. Managed nationwide IT staff of 60.</p>
+            </div>
+            <div className="flex items-start gap-8">
+              <div className="w-28 shrink-0 flex items-center pt-0.5">
+                <Image src={assets.logo('ey.svg')} alt="EY" width={70} height={40} className="h-9 w-auto" />
+              </div>
+              <p className="text-base text-stone-600 leading-relaxed">Mid market IT strategy consulting. Offered jobs by 3 clients.</p>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Advisory Clients */}
       <div className="mb-20">
-        <div className="flex items-center gap-4 mb-8">
+        <div className="flex items-center gap-4 mb-4">
           <p className="text-sm font-medium text-stone-400 tracking-widest uppercase">Advisory Clients</p>
           <span className="text-sm text-stone-300">via</span>
           <Image src={assets.logo('biostl.svg')} alt="BioSTL" width={90} height={28} className="h-6 w-auto" />
         </div>
-        <p className="text-base text-stone-500 mb-8 max-w-xl">
-          Technology strategy and architecture guidance to healthcare startups at the pre-seed through Series A stage.
+        <p className="text-base text-stone-500 mb-8">
+          A sample of a few of my favorite clients.
         </p>
         <div className="grid grid-cols-5 gap-4">
-          <div className="border border-stone-200 p-6 flex items-center justify-center">
-            <Image src={assets.logo('gt-diagnostics-icon.png')} alt="GT Diagnostics" width={48} height={48} className="h-10 w-auto" />
+          <div className="border border-stone-200 p-8 flex items-center justify-center min-h-32">
+            <Image src={assets.logo('gt-diagnostics-icon.png')} alt="GT Diagnostics" width={80} height={80} className="h-16 w-auto" />
           </div>
-          <div className="border border-stone-200 p-6 flex items-center justify-center">
-            <Image src={assets.logo('pulsenmore.png')} alt="Pulsenmore" width={180} height={48} className="h-8 w-auto" />
+          <div className="border border-stone-200 p-8 flex items-center justify-center min-h-32">
+            <Image src={assets.logo('pulsenmore.png')} alt="Pulsenmore" width={200} height={60} className="h-12 w-auto" />
           </div>
-          <div className="border border-stone-900 bg-stone-900 p-6 flex items-center justify-center">
-            <Image src={assets.logo('ayble-health.png')} alt="Ayble Health" width={180} height={80} className="h-10 w-auto" />
+          <div className="border border-stone-900 bg-stone-900 p-8 flex items-center justify-center min-h-32">
+            <Image src={assets.logo('ayble-health.png')} alt="Ayble Health" width={200} height={80} className="h-12 w-auto" />
           </div>
-          <div className="border border-stone-200 p-6 flex items-center justify-center">
-            <Image src={assets.logo('manus-neuro.png')} alt="Manus Neuro" width={120} height={80} className="h-10 w-auto" />
+          <div className="border border-stone-200 p-8 flex items-center justify-center min-h-32">
+            <Image src={assets.logo('manus-neuro.png')} alt="Manus Neuro" width={160} height={80} className="h-12 w-auto" />
           </div>
-          <div className="border border-stone-200 p-6 flex items-center justify-center">
-            <Image src={assets.logo('neuro360.png')} alt="Neuro360" width={100} height={40} className="h-10 w-auto" style={{ width: 'auto' }} />
+          <div className="border border-stone-200 p-8 flex items-center justify-center min-h-32">
+            <Image src={assets.logo('neuro360.png')} alt="Neuro360" width={140} height={60} className="h-12 w-auto" style={{ width: 'auto' }} />
           </div>
         </div>
       </div>
