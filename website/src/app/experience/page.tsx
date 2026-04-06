@@ -43,7 +43,7 @@ export default function Experience() {
       <div className="space-y-0 mb-20">
 
         {/* Current — STP / AI orchestration */}
-        <div className="grid grid-cols-4 gap-8 py-10 border-t border-stone-200">
+        <div className="grid grid-cols-4 gap-8 py-7 border-t border-stone-200">
           <div className="space-y-4">
             <div className="h-12 flex items-center">
               <Image src={assets.logo('STP Logo.png')} alt="Smarter Travel Planner" width={0} height={0} sizes="300px" style={{ height: '40px', width: 'auto' }} />
@@ -61,7 +61,7 @@ export default function Experience() {
         </div>
 
         {/* BioSTL */}
-        <div className="grid grid-cols-4 gap-8 py-10 border-t border-stone-200">
+        <div className="grid grid-cols-4 gap-8 py-7 border-t border-stone-200">
           <div className="space-y-4">
             <div className="h-12 flex items-center">
               <Image src={assets.logo('biostl.svg')} alt="BioSTL" width={100} height={48} className="h-10 w-auto" />
@@ -85,7 +85,7 @@ export default function Experience() {
         </div>
 
         {/* Centene */}
-        <div className="grid grid-cols-4 gap-8 py-10 border-t border-stone-200">
+        <div className="grid grid-cols-4 gap-8 py-7 border-t border-stone-200">
           <div className="space-y-4">
             <div className="h-12 flex items-center">
               <Image src={assets.logo('centene.svg')} alt="Centene Corporation" width={180} height={48} className="h-10 w-auto" />
@@ -102,7 +102,7 @@ export default function Experience() {
         </div>
 
         {/* Mastercard */}
-        <div className="grid grid-cols-4 gap-8 py-10 border-t border-stone-200">
+        <div className="grid grid-cols-4 gap-8 py-7 border-t border-stone-200">
           <div className="space-y-4">
             <div className="h-12 flex items-center">
               <Image src={assets.logo('mastercard.svg')} alt="Mastercard" width={180} height={48} className="h-10 w-auto" />
@@ -121,7 +121,7 @@ export default function Experience() {
         </div>
 
         {/* Equilliance */}
-        <div className="grid grid-cols-4 gap-8 py-10 border-t border-stone-200">
+        <div className="grid grid-cols-4 gap-8 py-7 border-t border-stone-200">
           <div className="space-y-4">
             <div className="h-12 flex items-center">
               <Image src={assets.logo('Equilliance-web.png')} alt="Equilliance Companies" width={180} height={93} className="h-10 w-auto" />
@@ -141,7 +141,7 @@ export default function Experience() {
         </div>
 
         {/* United Mortgage Partners */}
-        <div className="grid grid-cols-4 gap-8 py-10 border-t border-stone-200">
+        <div className="grid grid-cols-4 gap-8 py-7 border-t border-stone-200">
           <div className="space-y-4">
             <div className="h-12 flex items-center">
               <Image src={assets.logo('ump.png')} alt="United Mortgage Partners" width={220} height={48} className="h-8 w-auto" />
@@ -157,30 +157,42 @@ export default function Experience() {
           </div>
         </div>
 
-        {/* Earlier Career */}
-        <div className="grid grid-cols-4 gap-8 py-10 border-t border-stone-200">
-          <div>
-            <p className="text-base text-stone-400">1994 – 1999</p>
+        {/* Berg */}
+        <div className="grid grid-cols-4 gap-8 py-6 border-t border-stone-200">
+          <div className="space-y-3">
+            <div className="h-10 flex items-center">
+              <Image src={assets.logo('berg.jpg')} alt="Berg Electronics" width={120} height={40} className="h-8 w-auto" />
+            </div>
+            <p className="text-base text-stone-400">1994 – 1998</p>
           </div>
-          <div className="col-span-3 space-y-8">
-            <div className="flex items-start gap-8">
-              <div className="w-28 shrink-0 flex items-center pt-0.5">
-                <Image src={assets.logo('berg.jpg')} alt="Berg Electronics" width={100} height={40} className="h-8 w-auto" />
-              </div>
-              <p className="text-base text-stone-600 leading-relaxed">Progressed from entry level to global technology leadership in 4 years.</p>
+          <div className="col-span-3 flex items-center">
+            <p className="text-base text-stone-600 leading-relaxed">Progressed from entry level to global technology leadership in 4 years.</p>
+          </div>
+        </div>
+
+        {/* EY */}
+        <div className="grid grid-cols-4 gap-8 py-6 border-t border-stone-200">
+          <div className="space-y-3">
+            <div className="h-10 flex items-center">
+              <Image src={assets.logo('ey.svg')} alt="EY" width={70} height={40} className="h-9 w-auto" />
             </div>
-            <div className="flex items-start gap-8">
-              <div className="w-28 shrink-0 flex items-center pt-0.5">
-                <Image src={assets.logo('sypris.jpg')} alt="Sypris Electronics" width={120} height={40} className="h-8 w-auto" />
-              </div>
-              <p className="text-base text-stone-600 leading-relaxed">Led the consolidation of IT services across 6 subsidiaries. Managed nationwide IT staff of 60.</p>
+            <p className="text-base text-stone-400">1998 – 1999</p>
+          </div>
+          <div className="col-span-3 flex items-center">
+            <p className="text-base text-stone-600 leading-relaxed">Mid market IT strategy consulting. Offered jobs by 3 clients.</p>
+          </div>
+        </div>
+
+        {/* Sypris */}
+        <div className="grid grid-cols-4 gap-8 py-6 border-t border-stone-200">
+          <div className="space-y-3">
+            <div className="h-10 flex items-center">
+              <Image src={assets.logo('sypris.jpg')} alt="Sypris Electronics" width={130} height={40} className="h-8 w-auto" />
             </div>
-            <div className="flex items-start gap-8">
-              <div className="w-28 shrink-0 flex items-center pt-0.5">
-                <Image src={assets.logo('ey.svg')} alt="EY" width={70} height={40} className="h-9 w-auto" />
-              </div>
-              <p className="text-base text-stone-600 leading-relaxed">Mid market IT strategy consulting. Offered jobs by 3 clients.</p>
-            </div>
+            <p className="text-base text-stone-400">1999 – 2003</p>
+          </div>
+          <div className="col-span-3 flex items-center">
+            <p className="text-base text-stone-600 leading-relaxed">Led the consolidation of IT services across 6 subsidiaries. Managed nationwide IT staff of 60.</p>
           </div>
         </div>
       </div>
