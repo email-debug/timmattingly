@@ -207,7 +207,7 @@ export default function Experience() {
             {/* First pass */}
             <div className="flex items-center h-14 px-4"><Image src={assets.client('gt-diagnostics.png')} alt="GT Diagnostics" width={240} height={56} className="h-12 w-auto" /></div>
             <div className="flex items-center h-14 px-4"><Image src={assets.client('pulsenmore.png')} alt="Pulsenmore" width={180} height={56} className="h-10 w-auto" /></div>
-            <div className="flex items-center justify-center h-14 px-6 bg-stone-900 rounded"><Image src={assets.client('ayble-health.png')} alt="Ayble Health" width={160} height={56} className="h-10 w-auto" /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('ayble-health.png')} alt="Ayble Health" width={160} height={56} className="h-10 w-auto" /></div>
             <div className="flex items-center h-14 px-4"><Image src={assets.client('manus-neuro.jpg')} alt="Manus Neuro" width={180} height={56} className="h-10 w-auto" /></div>
             <div className="flex items-center h-14 px-4"><Image src={assets.client('cergenx.png')} alt="CergenX" width={200} height={56} className="h-10 w-auto" /></div>
             <div className="flex items-center h-14 px-4"><Image src={assets.client('incision.png')} alt="Incision" width={200} height={56} className="h-10 w-auto" /></div>
@@ -217,7 +217,7 @@ export default function Experience() {
             {/* Duplicate for seamless loop */}
             <div className="flex items-center h-14 px-4"><Image src={assets.client('gt-diagnostics.png')} alt="GT Diagnostics" width={240} height={56} className="h-12 w-auto" /></div>
             <div className="flex items-center h-14 px-4"><Image src={assets.client('pulsenmore.png')} alt="Pulsenmore" width={180} height={56} className="h-10 w-auto" /></div>
-            <div className="flex items-center justify-center h-14 px-6 bg-stone-900 rounded"><Image src={assets.client('ayble-health.png')} alt="Ayble Health" width={160} height={56} className="h-10 w-auto" /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('ayble-health.png')} alt="Ayble Health" width={160} height={56} className="h-10 w-auto" /></div>
             <div className="flex items-center h-14 px-4"><Image src={assets.client('manus-neuro.jpg')} alt="Manus Neuro" width={180} height={56} className="h-10 w-auto" /></div>
             <div className="flex items-center h-14 px-4"><Image src={assets.client('cergenx.png')} alt="CergenX" width={200} height={56} className="h-10 w-auto" /></div>
             <div className="flex items-center h-14 px-4"><Image src={assets.client('incision.png')} alt="Incision" width={200} height={56} className="h-10 w-auto" /></div>
