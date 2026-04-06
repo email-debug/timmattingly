@@ -50,6 +50,11 @@ export default function Experience() {
             <p className="text-sm text-stone-500 leading-snug">Strategic advisory to healthcare startups through BioSTL/Biogenerator. 2023 – Present.</p>
           </div>
           <div className="border-t border-stone-200 pt-4">
+            <p className="text-base font-medium text-stone-900 mb-3">AI Vibe Coding CI/CD Engine</p>
+            <p className="text-sm font-medium text-stone-700 mb-1">Architect &amp; Builder</p>
+            <p className="text-sm text-stone-500 leading-snug">Custom AI agent orchestration system: bead decomposition, parallel agents, smoke gates, failure recovery.</p>
+          </div>
+          <div className="border-t border-stone-200 pt-4">
             <div className="flex items-center mb-3">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={assets.logo('STP Logo.png')} alt="Smarter Travel Planner" style={{ width: '160px', height: 'auto' }} />
@@ -57,11 +62,6 @@ export default function Experience() {
             <p className="text-sm font-medium text-stone-700 mb-1">Founder</p>
             <p className="text-sm text-stone-500 leading-snug">AI-powered trip planning SaaS with conversational concierge, maps, and payments.</p>
             <a href="https://smartertravelplanner.com" target="_blank" rel="noopener noreferrer" className="text-xs text-stone-400 hover:text-stone-700 mt-2 inline-block">smartertravelplanner.com ↗</a>
-          </div>
-          <div className="border-t border-stone-200 pt-4">
-            <p className="text-base font-medium text-stone-900 mb-3">AI Vibe Coding CI/CD Engine</p>
-            <p className="text-sm font-medium text-stone-700 mb-1">Architect &amp; Builder</p>
-            <p className="text-sm text-stone-500 leading-snug">Custom AI agent orchestration system: bead decomposition, parallel agents, smoke gates, failure recovery.</p>
           </div>
           <div className="border-t border-stone-200 pt-4">
             <p className="text-base font-medium text-stone-900 mb-3">Woodsmill HOA</p>
