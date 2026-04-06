@@ -126,18 +126,19 @@ export default function Experience() {
         <div className="grid grid-cols-4 gap-8 py-10 border-t border-stone-200">
           <div className="space-y-4">
             <div className="h-12 flex items-center">
-              <Image src={assets.logo('EquillianceLogo-2412x1337.jpg')} alt="Equilliance Companies" width={220} height={48} className="h-10 w-auto" />
+              <Image src={assets.logo('Equilliance-web.png')} alt="Equilliance Companies" width={180} height={93} className="h-10 w-auto" />
             </div>
             <p className="text-base text-stone-400">2003 – 2011</p>
           </div>
           <div className="col-span-3">
             <p className="text-lg font-medium text-stone-700 mb-3">President & Founder</p>
-            <ul className="space-y-2 text-base text-stone-600 leading-relaxed">
+            <ul className="space-y-2 text-base text-stone-600 leading-relaxed mb-5">
               <li>Founded and grew a technology services company to 300+ employees across 5 subsidiaries</li>
               <li>Acquired and integrated 4 competitors, expanding service capabilities and geographic reach</li>
               <li>Full P&L responsibility — built the business from zero to a sustainable multi-subsidiary operation</li>
               <li>Led all aspects: strategy, sales, operations, hiring, client relationships, M&A</li>
             </ul>
+            <p className="text-sm text-stone-400 italic">Orlando Business Journal — Entrepreneur of the Month · 40 Under 40</p>
           </div>
         </div>
 
