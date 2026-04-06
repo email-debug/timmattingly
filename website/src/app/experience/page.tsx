@@ -46,7 +46,8 @@ export default function Experience() {
         <div className="grid grid-cols-4 gap-8 py-7 border-t border-stone-200">
           <div className="space-y-4">
             <div className="h-12 flex items-center">
-              <Image src={assets.logo('STP Logo.png')} alt="Smarter Travel Planner" width={0} height={0} sizes="300px" style={{ height: '40px', width: 'auto' }} />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={assets.logo('STP Logo.png')} alt="Smarter Travel Planner" style={{ height: '40px', width: 'auto' }} />
             </div>
             <p className="text-base text-stone-400">2024 – Present</p>
           </div>
@@ -105,7 +106,7 @@ export default function Experience() {
         <div className="grid grid-cols-4 gap-8 py-7 border-t border-stone-200">
           <div className="space-y-4">
             <div className="h-12 flex items-center">
-              <Image src={assets.logo('mastercard.svg')} alt="Mastercard" width={180} height={48} className="h-10 w-auto" />
+              <Image src={assets.logo('mastercard.svg')} alt="Mastercard" width={240} height={60} className="h-14 w-auto" />
             </div>
             <p className="text-base text-stone-400">2011 – 2018</p>
           </div>
@@ -124,7 +125,7 @@ export default function Experience() {
         <div className="grid grid-cols-4 gap-8 py-7 border-t border-stone-200">
           <div className="space-y-4">
             <div className="h-12 flex items-center">
-              <Image src={assets.logo('Equilliance-web.png')} alt="Equilliance Companies" width={180} height={93} className="h-10 w-auto" />
+              <Image src={assets.logo('Equilliance.png')} alt="Equilliance Companies" width={180} height={93} className="h-10 w-auto" />
             </div>
             <p className="text-base text-stone-400">2003 – 2011</p>
           </div>
