@@ -197,11 +197,12 @@ export default function Experience() {
 
       {/* Advisory Clients */}
       <div className="mb-20">
-        <div className="flex items-center gap-4 mb-6">
+        <div className="flex items-center gap-4 mb-3">
           <p className="text-sm font-medium text-stone-400 tracking-widest uppercase">Advisory Clients</p>
           <span className="text-sm text-stone-300">via</span>
           <Image src={assets.logo('biostl.svg')} alt="BioSTL" width={90} height={28} className="h-6 w-auto" />
         </div>
+        <p className="text-base text-stone-500 mb-6">A sample of a few of my favorite clients.</p>
         <div className="overflow-hidden border-t border-b border-stone-100 py-6">
           <div className="flex gap-12 animate-scroll" style={{ width: 'max-content' }}>
             {/* First pass */}
@@ -235,7 +236,9 @@ export default function Experience() {
           <p className="text-sm font-medium text-stone-400 tracking-widest uppercase mb-8">Education</p>
           <div className="space-y-8">
             <div className="flex items-start gap-4">
-              <Image src={assets.logo('rollins.svg')} alt="Rollins College" width={130} height={36} className="h-8 w-auto mt-0.5 shrink-0" />
+              <div className="bg-stone-800 rounded px-2 py-1 shrink-0 mt-0.5">
+                <Image src={assets.logo('rollins.svg')} alt="Rollins College" width={130} height={36} className="h-7 w-auto" />
+              </div>
               <div>
                 <p className="text-lg font-medium text-stone-700">Executive MBA — 4.0 GPA</p>
                 <p className="text-base text-stone-500">Crummer Graduate School of Business</p>
