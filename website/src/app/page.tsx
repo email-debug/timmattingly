@@ -50,11 +50,11 @@ export default function Home() {
                   <Image src={assets.logo('mastercard.svg')} alt="Mastercard" width={200} height={40} className="h-10 w-auto" style={{ width: 'auto' }} />
                 </div>
                 <p className="text-sm font-medium text-stone-600 text-center">VP Strategic Partnerships</p>
-                <p className="text-xs text-stone-400 text-center">Global Team</p>
+                <p className="text-xs text-stone-400 text-center">Leading Global Product Team with $100M Net Income</p>
               </div>
               <div className="flex flex-col items-center gap-2 shrink-0 w-56">
                 <div className="h-10 flex items-center">
-                  <Image src={assets.logo('EquillianceLogo-2412x1337.jpg')} alt="Equilliance" width={180} height={40} className="h-10 w-auto" style={{ width: 'auto' }} />
+                  <Image src={assets.logo('EquillianceLogo.jpg')} alt="Equilliance" width={180} height={40} className="h-10 w-auto" style={{ width: 'auto' }} />
                 </div>
                 <p className="text-sm font-medium text-stone-600 text-center">Founder & President</p>
                 <p className="text-xs text-stone-400 text-center">300 Employee Real Estate Services Family of Companies</p>
@@ -68,7 +68,8 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center gap-2 shrink-0 w-56">
                 <div className="h-10 flex items-center">
-                  <Image src={assets.logo('STP Logo.png')} alt="Smarter Travel Planner" width={0} height={0} sizes="200px" style={{ height: '36px', width: 'auto' }} />
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={assets.logo('STP Logo.png')} alt="Smarter Travel Planner" height={36} style={{ height: '36px', width: 'auto' }} />
                 </div>
                 <p className="text-sm font-medium text-stone-600 text-center">Founder & Builder</p>
                 <p className="text-xs text-stone-400 text-center">AI Concierge Travel Planning System — Nearing Launch</p>

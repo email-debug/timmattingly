@@ -6,9 +6,12 @@ import { assets } from '@/lib/assets';
 
 const images = [
   { src: assets.headshot('hs-olympics.jpg'), alt: 'Tim at Milano Cortina 2026' },
-  { src: assets.headshot('hs-dolomites.jpg'), alt: 'Tim in the Dolomites' },
+  { src: assets.headshot('hs-dolomites.jpg'), alt: 'Tim in the Dolomites, Italy' },
   { src: assets.headshot('hs-iceland.jpg'), alt: 'Tim at Jokulsarlon Glacier Lagoon, Iceland' },
   { src: assets.headshot('hs-bear.jpg'), alt: 'Tim with a bear behind him, Alaska' },
+  { src: assets.headshot('hs-skiing.jpg'), alt: 'Tim skiing' },
+  { src: assets.headshot('hs-hlth.jpg'), alt: 'Tim at HLTH Conference' },
+  { src: assets.headshot('hs-alps.jpg'), alt: 'Tim in the Alps' },
 ];
 
 export default function HeroSlideshow() {
