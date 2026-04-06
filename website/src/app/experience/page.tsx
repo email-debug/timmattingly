@@ -38,27 +38,42 @@ export default function Experience() {
         </div>
       </div>
 
-      {/* Career Timeline */}
-      <div className="space-y-0 mb-20">
-
-        {/* Current — STP / AI orchestration */}
-        <div className="grid grid-cols-4 gap-8 py-7 border-t border-stone-200">
-          <div className="space-y-4">
-            <div className="flex items-center">
+      {/* Currently */}
+      <div className="mb-16">
+        <p className="text-sm font-medium text-stone-400 tracking-widest uppercase mb-6">Currently</p>
+        <div className="grid grid-cols-4 gap-6">
+          <div className="border-t border-stone-200 pt-4">
+            <div className="flex items-center mb-3">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={assets.logo('STP Logo.png')} alt="Smarter Travel Planner" style={{ width: '200px', height: 'auto' }} />
+              <img src={assets.logo('STP Logo.png')} alt="Smarter Travel Planner" style={{ width: '160px', height: 'auto' }} />
             </div>
-            <p className="text-base text-stone-400">2026 – Present</p>
+            <p className="text-sm font-medium text-stone-700 mb-1">Founder</p>
+            <p className="text-sm text-stone-500 leading-snug">AI-powered trip planning SaaS with conversational concierge, maps, and payments.</p>
+            <a href="https://smartertravelplanner.com" target="_blank" rel="noopener noreferrer" className="text-xs text-stone-400 hover:text-stone-700 mt-2 inline-block">smartertravelplanner.com ↗</a>
           </div>
-          <div className="col-span-3">
-            <p className="text-lg font-medium text-stone-700 mb-3">Founder — AI-Orchestrated SaaS</p>
-            <ul className="space-y-2 text-base text-stone-600 leading-relaxed">
-              <li>Designed and built a custom AI agent orchestration engine — epic planning, bead decomposition, parallel agents, smoke gates, failure recovery — all automated</li>
-              <li>Shipped a full production SaaS (React, TypeScript, Firebase, GCP Cloud Run, Stripe, Gemini AI) without writing a line of code</li>
-              <li>Demonstrates what the next generation of technical leadership looks like: architect, orchestrate, ship — at the speed of AI</li>
-            </ul>
+          <div className="border-t border-stone-200 pt-4">
+            <p className="text-base font-medium text-stone-900 mb-3">AI Vibe Coding CI/CD Engine</p>
+            <p className="text-sm font-medium text-stone-700 mb-1">Architect &amp; Builder</p>
+            <p className="text-sm text-stone-500 leading-snug">Custom AI agent orchestration system: bead decomposition, parallel agents, smoke gates, failure recovery.</p>
+          </div>
+          <div className="border-t border-stone-200 pt-4">
+            <div className="h-8 flex items-center mb-3">
+              <Image src={assets.logo('biostl.svg')} alt="BioSTL" width={80} height={28} className="h-7 w-auto" />
+            </div>
+            <p className="text-sm font-medium text-stone-700 mb-1">Executive Advisor</p>
+            <p className="text-sm text-stone-500 leading-snug">Strategic advisory to healthcare startups through BioSTL/Biogenerator. 2023 – Present.</p>
+          </div>
+          <div className="border-t border-stone-200 pt-4">
+            <p className="text-base font-medium text-stone-900 mb-3">Woodsmill HOA</p>
+            <p className="text-sm font-medium text-stone-700 mb-1">President</p>
+            <p className="text-sm text-stone-500 leading-snug">Elected president of the homeowners association.</p>
           </div>
         </div>
+      </div>
+
+      {/* Prior Experience */}
+      <div className="space-y-0 mb-20">
+        <p className="text-sm font-medium text-stone-400 tracking-widest uppercase mb-0">Prior Experience</p>
 
         {/* BioSTL */}
         <div className="grid grid-cols-4 gap-8 py-7 border-t border-stone-200">
@@ -77,15 +92,15 @@ export default function Experience() {
           </div>
           <div className="col-span-3">
             <p className="text-lg font-medium text-stone-700 mb-3">Head of Innovation Advisory · Executive Advisor · Entrepreneur in Residence</p>
-            <p className="text-sm text-stone-400 mb-4 italic">BioSTL / Biogenerator — St. Louis's leading life sciences and digital health accelerator</p>
+            <p className="text-sm text-stone-400 mb-4 italic">BioSTL / Biogenerator — St. Louis&apos;s leading life sciences and digital health accelerator</p>
             <ul className="space-y-2 text-base text-stone-600 leading-relaxed">
               <li>Took over a dormant advisory practice — 25 named advisors, 10 active, near-zero clients — and rebuilt it from the ground up</li>
               <li>Grew to 100+ advisors (50+ active), ~15 active retainer clients at any given time, with a full pipeline of healthcare startups</li>
               <li>Built operational processes from scratch; designed and implemented a custom CRM and practice management system in AirTable</li>
-              <li>Coached the practice's junior associate through multiple promotions to Director-level; he now independently manages and closes new clients</li>
+              <li>Coached the practice&apos;s junior associate through multiple promotions to Director-level; he now independently manages and closes new clients</li>
               <li>Negotiated and structured a joint venture between BioSTL/Biogenerator and Redesign Health to launch the St. Louis Digital Health Venture Studio</li>
               <li>Served as Entrepreneur in Residence for Neuro360</li>
-              <li>Produced two BioSTL Health Innovation Summits — the largest in the organization's history; added a new startup track in 2025 with 40 companies from 10 countries and 350 attendees</li>
+              <li>Produced two BioSTL Health Innovation Summits — the largest in the organization&apos;s history; added a new startup track in 2025 with 40 companies from 10 countries and 350 attendees</li>
             </ul>
           </div>
         </div>
