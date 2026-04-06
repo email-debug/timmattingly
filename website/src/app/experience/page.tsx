@@ -44,7 +44,7 @@ export default function Experience() {
         <div className="grid grid-cols-4 gap-6">
           <div className="border-t border-stone-200 pt-4">
             <div className="h-8 flex items-center mb-3">
-              <Image src={assets.logo('biostl.svg')} alt="BioSTL" width={80} height={28} className="h-7" style={{ width: 'auto' }} />
+              <Image src={assets.logo('biostl.svg')} alt="BioSTL" width={80} height={28} style={{ height: '28px', width: 'auto' }} />
             </div>
             <p className="text-sm font-medium text-stone-700 mb-1">Executive Advisor</p>
             <p className="text-sm text-stone-500 leading-snug">Strategic advisory to healthcare startups through BioSTL/Biogenerator. 2023 – Present.</p>
@@ -79,7 +79,7 @@ export default function Experience() {
         <div className="grid grid-cols-4 gap-8 py-7 border-t border-stone-200">
           <div className="space-y-4">
             <div className="h-12 flex items-center">
-              <Image src={assets.logo('biostl.svg')} alt="BioSTL" width={100} height={48} className="h-10 w-auto" />
+              <Image src={assets.logo('biostl.svg')} alt="BioSTL" width={100} height={48} style={{ height: '40px', width: 'auto' }} />
             </div>
             <div className="space-y-1">
               <p className="text-sm text-stone-500">Head of Innovation Advisory</p>
@@ -109,7 +109,7 @@ export default function Experience() {
         <div className="grid grid-cols-4 gap-8 py-7 border-t border-stone-200">
           <div className="space-y-4">
             <div className="h-12 flex items-center">
-              <Image src={assets.logo('centene.svg')} alt="Centene Corporation" width={180} height={48} className="h-10 w-auto" />
+              <Image src={assets.logo('centene.svg')} alt="Centene Corporation" width={180} height={48} style={{ height: '40px', width: 'auto' }} />
             </div>
             <p className="text-base text-stone-400">2018 – 2023</p>
           </div>
@@ -126,7 +126,7 @@ export default function Experience() {
         <div className="grid grid-cols-4 gap-8 py-7 border-t border-stone-200">
           <div className="space-y-4">
             <div className="h-12 flex items-center">
-              <Image src={assets.logo('mastercard.svg')} alt="Mastercard" width={240} height={60} className="h-14 w-auto" />
+              <Image src={assets.logo('mastercard.svg')} alt="Mastercard" width={240} height={60} style={{ height: '56px', width: 'auto' }} />
             </div>
             <p className="text-base text-stone-400">2011 – 2018</p>
           </div>
@@ -145,7 +145,7 @@ export default function Experience() {
         <div className="grid grid-cols-4 gap-8 py-7 border-t border-stone-200">
           <div className="space-y-4">
             <div className="h-12 flex items-center">
-              <Image src={assets.logo('Equilliance.png')} alt="Equilliance Companies" width={180} height={93} className="h-10 w-auto" />
+              <Image src={assets.logo('Equilliance.png')} alt="Equilliance Companies" width={180} height={93} style={{ height: '40px', width: 'auto' }} />
             </div>
             <p className="text-base text-stone-400">2003 – 2011</p>
           </div>
@@ -165,7 +165,7 @@ export default function Experience() {
         <div className="grid grid-cols-4 gap-8 py-7 border-t border-stone-200">
           <div className="space-y-4">
             <div className="h-12 flex items-center">
-              <Image src={assets.logo('ump.png')} alt="United Mortgage Partners" width={220} height={48} className="h-8 w-auto" />
+              <Image src={assets.logo('ump.png')} alt="United Mortgage Partners" width={220} height={48} style={{ height: '32px', width: 'auto' }} />
             </div>
             <p className="text-base text-stone-400">2009 – 2011</p>
           </div>
@@ -215,31 +215,31 @@ export default function Experience() {
         <div className="flex items-center gap-4 mb-3">
           <p className="text-sm font-medium text-stone-400 tracking-widest uppercase">Advisory Clients</p>
           <span className="text-sm text-stone-300">via</span>
-          <Image src={assets.logo('biostl.svg')} alt="BioSTL" width={90} height={28} className="h-6 w-auto" />
+          <Image src={assets.logo('biostl.svg')} alt="BioSTL" width={90} height={28} style={{ height: '24px', width: 'auto' }} />
         </div>
         <p className="text-base text-stone-500 mb-6">A sample of a few of my favorite clients.</p>
         <div className="overflow-hidden border-t border-b border-stone-100 py-6">
           <div className="flex gap-12 animate-scroll" style={{ width: 'max-content' }}>
             {/* First pass */}
-            <div className="flex items-center h-14 px-4"><Image src={assets.client('gt-diagnostics.png')} alt="GT Diagnostics" width={240} height={56} className="h-12 w-auto" /></div>
-            <div className="flex items-center h-14 px-4"><Image src={assets.client('pulsenmore.png')} alt="Pulsenmore" width={180} height={56} className="h-10 w-auto" /></div>
-            <div className="flex items-center h-14 px-4"><Image src={assets.client('ayble-health.png')} alt="Ayble Health" width={160} height={56} className="h-10 w-auto" /></div>
-            <div className="flex items-center h-14 px-4"><Image src={assets.client('manus-neuro.jpg')} alt="Manus Neuro" width={180} height={56} className="h-10 w-auto" /></div>
-            <div className="flex items-center h-14 px-4"><Image src={assets.client('cergenx.png')} alt="CergenX" width={200} height={56} className="h-10 w-auto" /></div>
-            <div className="flex items-center h-14 px-4"><Image src={assets.client('incision.png')} alt="Incision" width={200} height={56} className="h-10 w-auto" /></div>
-            <div className="flex items-center h-14 px-4"><Image src={assets.client('pragmaclin.png')} alt="PragmaClin" width={200} height={56} className="h-10 w-auto" /></div>
-            <div className="flex items-center h-14 px-4"><Image src={assets.client('sayvant.jpg')} alt="Sayvant" width={180} height={56} className="h-10 w-auto" /></div>
-            <div className="flex items-center h-14 px-4"><Image src={assets.client('sober-sidekick.jpg')} alt="Sober Sidekick" width={200} height={56} className="h-10 w-auto" /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('gt-diagnostics.png')} alt="GT Diagnostics" width={240} height={56} style={{ height: '48px', width: 'auto' }} /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('pulsenmore.png')} alt="Pulsenmore" width={180} height={56} style={{ height: '40px', width: 'auto' }} /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('ayble-health.png')} alt="Ayble Health" width={160} height={56} style={{ height: '40px', width: 'auto' }} /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('manus-neuro.jpg')} alt="Manus Neuro" width={180} height={56} style={{ height: '40px', width: 'auto' }} /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('cergenx.png')} alt="CergenX" width={200} height={56} style={{ height: '40px', width: 'auto' }} /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('incision.png')} alt="Incision" width={200} height={56} style={{ height: '40px', width: 'auto' }} /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('pragmaclin.png')} alt="PragmaClin" width={200} height={56} style={{ height: '40px', width: 'auto' }} /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('sayvant.jpg')} alt="Sayvant" width={180} height={56} style={{ height: '40px', width: 'auto' }} /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('sober-sidekick.jpg')} alt="Sober Sidekick" width={200} height={56} style={{ height: '40px', width: 'auto' }} /></div>
             {/* Duplicate for seamless loop */}
-            <div className="flex items-center h-14 px-4"><Image src={assets.client('gt-diagnostics.png')} alt="GT Diagnostics" width={240} height={56} className="h-12 w-auto" /></div>
-            <div className="flex items-center h-14 px-4"><Image src={assets.client('pulsenmore.png')} alt="Pulsenmore" width={180} height={56} className="h-10 w-auto" /></div>
-            <div className="flex items-center h-14 px-4"><Image src={assets.client('ayble-health.png')} alt="Ayble Health" width={160} height={56} className="h-10 w-auto" /></div>
-            <div className="flex items-center h-14 px-4"><Image src={assets.client('manus-neuro.jpg')} alt="Manus Neuro" width={180} height={56} className="h-10 w-auto" /></div>
-            <div className="flex items-center h-14 px-4"><Image src={assets.client('cergenx.png')} alt="CergenX" width={200} height={56} className="h-10 w-auto" /></div>
-            <div className="flex items-center h-14 px-4"><Image src={assets.client('incision.png')} alt="Incision" width={200} height={56} className="h-10 w-auto" /></div>
-            <div className="flex items-center h-14 px-4"><Image src={assets.client('pragmaclin.png')} alt="PragmaClin" width={200} height={56} className="h-10 w-auto" /></div>
-            <div className="flex items-center h-14 px-4"><Image src={assets.client('sayvant.jpg')} alt="Sayvant" width={180} height={56} className="h-10 w-auto" /></div>
-            <div className="flex items-center h-14 px-4"><Image src={assets.client('sober-sidekick.jpg')} alt="Sober Sidekick" width={200} height={56} className="h-10 w-auto" /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('gt-diagnostics.png')} alt="GT Diagnostics" width={240} height={56} style={{ height: '48px', width: 'auto' }} /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('pulsenmore.png')} alt="Pulsenmore" width={180} height={56} style={{ height: '40px', width: 'auto' }} /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('ayble-health.png')} alt="Ayble Health" width={160} height={56} style={{ height: '40px', width: 'auto' }} /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('manus-neuro.jpg')} alt="Manus Neuro" width={180} height={56} style={{ height: '40px', width: 'auto' }} /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('cergenx.png')} alt="CergenX" width={200} height={56} style={{ height: '40px', width: 'auto' }} /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('incision.png')} alt="Incision" width={200} height={56} style={{ height: '40px', width: 'auto' }} /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('pragmaclin.png')} alt="PragmaClin" width={200} height={56} style={{ height: '40px', width: 'auto' }} /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('sayvant.jpg')} alt="Sayvant" width={180} height={56} style={{ height: '40px', width: 'auto' }} /></div>
+            <div className="flex items-center h-14 px-4"><Image src={assets.client('sober-sidekick.jpg')} alt="Sober Sidekick" width={200} height={56} style={{ height: '40px', width: 'auto' }} /></div>
           </div>
         </div>
       </div>
@@ -252,7 +252,7 @@ export default function Experience() {
           <div className="space-y-8">
             <div className="flex items-start gap-4">
               <div className="bg-stone-800 rounded px-2 py-1 shrink-0 mt-0.5">
-                <Image src={assets.logo('rollins.svg')} alt="Rollins College" width={130} height={36} className="h-7 w-auto" />
+                <Image src={assets.logo('rollins.svg')} alt="Rollins College" width={130} height={36} style={{ height: '28px', width: 'auto' }} />
               </div>
               <div>
                 <p className="text-lg font-medium text-stone-700">Executive MBA — 4.0 GPA</p>
