@@ -58,7 +58,7 @@ export default function Experience() {
           </div>
           <div className="border-t border-stone-200 pt-4">
             <div className="h-8 flex items-center mb-3">
-              <Image src={assets.logo('biostl.svg')} alt="BioSTL" width={80} height={28} className="h-7 w-auto" />
+              <Image src={assets.logo('biostl.svg')} alt="BioSTL" width={80} height={28} className="h-7" style={{ width: 'auto' }} />
             </div>
             <p className="text-sm font-medium text-stone-700 mb-1">Executive Advisor</p>
             <p className="text-sm text-stone-500 leading-snug">Strategic advisory to healthcare startups through BioSTL/Biogenerator. 2023 – Present.</p>
