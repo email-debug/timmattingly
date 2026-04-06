@@ -70,7 +70,7 @@ export default function Experience() {
             <p className="text-sm text-stone-400">Advisor, 2026 – Present</p>
           </div>
           <div className="col-span-3">
-            <p className="text-lg font-medium text-stone-700 mb-3">Managing Director, Advisory Practice · Entrepreneur in Residence</p>
+            <p className="text-lg font-medium text-stone-700 mb-3">Head of Innovation Advisory · Entrepreneur in Residence</p>
             <p className="text-sm text-stone-400 mb-4 italic">BioSTL / Biogenerator — St. Louis's leading life sciences and digital health accelerator</p>
             <ul className="space-y-2 text-base text-stone-600 leading-relaxed">
               <li>Took over a dormant advisory practice — 25 named advisors, 10 active, near-zero clients — and rebuilt it from the ground up</li>
