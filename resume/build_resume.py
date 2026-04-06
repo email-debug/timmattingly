@@ -36,8 +36,8 @@ s_contact    = style('contact',    SANS,      8,  TEXT_LIGHT, leading=11, space_
 s_section    = style('section',    SANS_B,    7.5, TEXT_LIGHT, leading=10, space_before=10, space_after=2)
 s_body       = style('body',       SANS,      9.5, TEXT_DARK, leading=13, space_after=2)
 s_body_small = style('bsmall',     SANS,      8.5, TEXT_LIGHT, leading=12, space_after=1)
-s_italic     = style('italic',     SANS_I,    9,   TEXT_MID, leading=12, space_after=2, left_indent=8)
-s_bullet     = style('bullet',     SANS,      9.5, TEXT_DARK, leading=13, space_after=1, left_indent=8)
+s_italic     = style('italic',     SANS_I,    9,   TEXT_MID, leading=12, space_after=2, left_indent=0)
+s_bullet     = style('bullet',     SANS,      9.5, TEXT_DARK, leading=13, space_after=1, left_indent=0)
 s_competency = style('competency', SANS,      9,   TEXT_MID, leading=13, space_after=0, alignment=TA_CENTER)
 
 # ATS-safe company/date style: single paragraph with right-tab simulation
@@ -45,7 +45,7 @@ s_company    = style('company',    SANS_B,    10,  TEXT_DARK, leading=13, space_
 s_date_r     = style('date_r',     SANS,      8.5, TEXT_LIGHT, leading=13, alignment=TA_RIGHT)
 s_sub_role   = style('sub_role',   SANS_B,    9,   TEXT_DARK, leading=12, space_before=2, space_after=1)
 s_curr_name  = style('curr_name',  SANS_B,    9.5, TEXT_DARK, leading=13, space_after=1)
-s_curr_desc  = style('curr_desc',  SANS,      9,   TEXT_MID, leading=12, space_after=4, left_indent=8)
+s_curr_desc  = style('curr_desc',  SANS,      9,   TEXT_MID, leading=12, space_after=4, left_indent=0)
 
 def section_header(title):
     return [
@@ -55,19 +55,13 @@ def section_header(title):
     ]
 
 def company_date_row(company, date):
-    """ATS-safe: table spanning full usable width. Company left, date right."""
-    data = [[Paragraph(company, s_company), Paragraph(date, s_date_r)]]
-    date_w = 1.0 * inch
-    t = Table(data, colWidths=[USABLE - date_w, date_w])
-    t.setStyle(TableStyle([
-        ('VALIGN', (0,0), (-1,-1), 'BOTTOM'),
-        ('LEFTPADDING', (0,0), (-1,-1), 0),
-        ('RIGHTPADDING', (0,0), (-1,-1), 0),
-        ('TOPPADDING', (0,0), (-1,-1), 2),
-        ('BOTTOMPADDING', (0,0), (-1,-1), 0),
-        ('ALIGN', (1,0), (1,0), 'RIGHT'),
-    ]))
-    return t
+    """Company bold left, date right on same line — single Paragraph for perfect alignment."""
+    # Use a single paragraph with the date right-floated via spacer hack
+    # This avoids Table offset issues entirely
+    return Paragraph(
+        f'{company} <font color="#777777" size="8.5">&nbsp;&nbsp;{date}</font>',
+        s_company
+    )
 
 def bullet(text):
     return Paragraph(f'\u2022\u2002{text}', s_bullet)
@@ -84,7 +78,7 @@ story.append(Paragraph(
     'linkedin.com/in/timothywmattingly &nbsp;\u00b7&nbsp; timmattingly.com',
     s_contact
 ))
-story.append(HRFlowable(width='100%', thickness=0.75, color=RULE_COLOR, spaceAfter=6))
+# Section headers already have their own rule — skip the extra one here
 
 # ── SUMMARY ─────────────────────────────────────────────────────────────────
 story += section_header('Summary')
@@ -127,7 +121,7 @@ curr_items = [
     ('BioSTL Innovation Advisory', 'Executive Advisor',
      'Ongoing strategic advisory to healthcare startups through BioSTL/Biogenerator, St. Louis\'s leading life sciences accelerator. (2023\u2013Present)'),
     ('Woodsmill HOA', 'President',
-     'Elected president of the Woodsmill homeowners association.'),
+     'Leading the drafting &amp; adoption of new governing legal docs &amp; the largest series of capital improvement projects in the 58 year history of the subdivision.'),
 ]
 
 for name, role, desc in curr_items:

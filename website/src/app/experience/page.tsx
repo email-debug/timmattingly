@@ -66,7 +66,7 @@ export default function Experience() {
           <div className="border-t border-stone-200 pt-4">
             <p className="text-base font-medium text-stone-900 mb-3">Woodsmill HOA</p>
             <p className="text-sm font-medium text-stone-700 mb-1">President</p>
-            <p className="text-sm text-stone-500 leading-snug">Elected president of the homeowners association.</p>
+            <p className="text-sm text-stone-500 leading-snug">Leading the drafting &amp; adoption of new governing legal docs &amp; the largest series of capital improvement projects in the 58 year history of the subdivision.</p>
           </div>
         </div>
       </div>
