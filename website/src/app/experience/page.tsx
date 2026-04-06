@@ -67,11 +67,17 @@ export default function Experience() {
             <div className="h-12 flex items-center">
               <Image src={assets.logo('biostl.svg')} alt="BioSTL" width={100} height={48} className="h-10 w-auto" />
             </div>
-            <p className="text-base text-stone-400">2024 – 2025</p>
-            <p className="text-sm text-stone-400">Advisor, 2026 – Present</p>
+            <div className="space-y-1">
+              <p className="text-sm text-stone-500">Executive Advisor</p>
+              <p className="text-sm text-stone-400">2023 – Present</p>
+            </div>
+            <div className="space-y-1">
+              <p className="text-sm text-stone-500">Head of Innovation Advisory</p>
+              <p className="text-sm text-stone-400">2024 – 2025</p>
+            </div>
           </div>
           <div className="col-span-3">
-            <p className="text-lg font-medium text-stone-700 mb-3">Head of Innovation Advisory · Entrepreneur in Residence</p>
+            <p className="text-lg font-medium text-stone-700 mb-3">Head of Innovation Advisory · Executive Advisor · Entrepreneur in Residence</p>
             <p className="text-sm text-stone-400 mb-4 italic">BioSTL / Biogenerator — St. Louis's leading life sciences and digital health accelerator</p>
             <ul className="space-y-2 text-base text-stone-600 leading-relaxed">
               <li>Took over a dormant advisory practice — 25 named advisors, 10 active, near-zero clients — and rebuilt it from the ground up</li>
