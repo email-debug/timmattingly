@@ -68,12 +68,12 @@ export default function Experience() {
               <Image src={assets.logo('biostl.svg')} alt="BioSTL" width={100} height={48} className="h-10 w-auto" />
             </div>
             <div className="space-y-1">
-              <p className="text-sm text-stone-500">Executive Advisor</p>
-              <p className="text-sm text-stone-400">2023 – Present</p>
-            </div>
-            <div className="space-y-1">
               <p className="text-sm text-stone-500">Head of Innovation Advisory</p>
               <p className="text-sm text-stone-400">2024 – 2025</p>
+            </div>
+            <div className="space-y-1">
+              <p className="text-sm text-stone-500">Executive Advisor</p>
+              <p className="text-sm text-stone-400">2023 – Present</p>
             </div>
           </div>
           <div className="col-span-3">
