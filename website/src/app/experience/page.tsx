@@ -5,7 +5,7 @@ export default function Experience() {
   return (
     <div className="max-w-6xl mx-auto px-8 pt-16 pb-24">
       {/* Header */}
-      <div className="grid grid-cols-2 gap-16 mb-16 items-center">
+      <div className="grid mb-16 items-center" style={{ gridTemplateColumns: '40% 60%', gap: '4rem' }}>
         <div>
           <p className="text-sm font-medium text-stone-400 tracking-widest uppercase mb-4">Experience</p>
           <h1 className="text-5xl font-light text-stone-900 mb-5">30 years of building</h1>
