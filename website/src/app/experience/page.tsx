@@ -157,42 +157,34 @@ export default function Experience() {
           </div>
         </div>
 
-        {/* Berg */}
-        <div className="grid grid-cols-4 gap-8 py-6 border-t border-stone-200">
-          <div className="space-y-3">
-            <div className="h-10 flex items-center">
-              <Image src={assets.logo('berg.jpg')} alt="Berg Electronics" width={120} height={40} className="h-8 w-auto" />
+        {/* Early career — Sypris, EY, Berg */}
+        <div className="border-t border-stone-200 pt-5 pb-2 space-y-4">
+          <div className="grid grid-cols-4 gap-8">
+            <div className="flex items-center gap-4">
+              <Image src={assets.logo('sypris.jpg')} alt="Sypris Electronics" width={130} height={40} className="h-8 w-auto shrink-0" />
+              <p className="text-sm text-stone-400 whitespace-nowrap">1999 – 2003</p>
             </div>
-            <p className="text-base text-stone-400">1994 – 1998</p>
-          </div>
-          <div className="col-span-3 flex items-center">
-            <p className="text-base text-stone-600 leading-relaxed">Progressed from entry level to global technology leadership in 4 years.</p>
-          </div>
-        </div>
-
-        {/* EY */}
-        <div className="grid grid-cols-4 gap-8 py-6 border-t border-stone-200">
-          <div className="space-y-3">
-            <div className="h-10 flex items-center">
-              <Image src={assets.logo('ey.svg')} alt="EY" width={70} height={40} className="h-9 w-auto" />
+            <div className="col-span-3 flex items-center">
+              <p className="text-base text-stone-600 leading-relaxed">Led the consolidation of IT services across 6 subsidiaries. Managed nationwide IT staff of 60.</p>
             </div>
-            <p className="text-base text-stone-400">1998 – 1999</p>
           </div>
-          <div className="col-span-3 flex items-center">
-            <p className="text-base text-stone-600 leading-relaxed">Mid market IT strategy consulting. Offered jobs by 3 clients.</p>
-          </div>
-        </div>
-
-        {/* Sypris */}
-        <div className="grid grid-cols-4 gap-8 py-6 border-t border-stone-200">
-          <div className="space-y-3">
-            <div className="h-10 flex items-center">
-              <Image src={assets.logo('sypris.jpg')} alt="Sypris Electronics" width={130} height={40} className="h-8 w-auto" />
+          <div className="grid grid-cols-4 gap-8">
+            <div className="flex items-center gap-4">
+              <Image src={assets.logo('ey.svg')} alt="EY" width={70} height={40} className="h-9 w-auto shrink-0" />
+              <p className="text-sm text-stone-400 whitespace-nowrap">1998 – 1999</p>
             </div>
-            <p className="text-base text-stone-400">1999 – 2003</p>
+            <div className="col-span-3 flex items-center">
+              <p className="text-base text-stone-600 leading-relaxed">Mid market IT strategy consulting. Offered jobs by 3 clients.</p>
+            </div>
           </div>
-          <div className="col-span-3 flex items-center">
-            <p className="text-base text-stone-600 leading-relaxed">Led the consolidation of IT services across 6 subsidiaries. Managed nationwide IT staff of 60.</p>
+          <div className="grid grid-cols-4 gap-8">
+            <div className="flex items-center gap-4">
+              <Image src={assets.logo('berg.jpg')} alt="Berg Electronics" width={160} height={48} className="h-10 w-auto shrink-0" />
+              <p className="text-sm text-stone-400 whitespace-nowrap">1994 – 1998</p>
+            </div>
+            <div className="col-span-3 flex items-center">
+              <p className="text-base text-stone-600 leading-relaxed">Progressed from entry level to global technology leadership in 4 years.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -208,20 +200,30 @@ export default function Experience() {
           A sample of a few of my favorite clients.
         </p>
         <div className="grid grid-cols-5 gap-4">
-          <div className="border border-stone-200 p-8 flex items-center justify-center min-h-32">
-            <Image src={assets.logo('gt-diagnostics-icon.png')} alt="GT Diagnostics" width={80} height={80} className="h-16 w-auto" />
+          <div className="border border-stone-200 p-6">
+            <div className="relative h-24">
+              <Image src={assets.logo('gt-diagnostics-icon.png')} alt="GT Diagnostics" fill className="object-contain" />
+            </div>
           </div>
-          <div className="border border-stone-200 p-8 flex items-center justify-center min-h-32">
-            <Image src={assets.logo('pulsenmore.png')} alt="Pulsenmore" width={200} height={60} className="h-12 w-auto" />
+          <div className="border border-stone-200 p-6">
+            <div className="relative h-24">
+              <Image src={assets.logo('pulsenmore.png')} alt="Pulsenmore" fill className="object-contain" />
+            </div>
           </div>
-          <div className="border border-stone-900 bg-stone-900 p-8 flex items-center justify-center min-h-32">
-            <Image src={assets.logo('ayble-health.png')} alt="Ayble Health" width={200} height={80} className="h-12 w-auto" />
+          <div className="border border-stone-900 bg-stone-900 p-6">
+            <div className="relative h-24">
+              <Image src={assets.logo('ayble-health.png')} alt="Ayble Health" fill className="object-contain" />
+            </div>
           </div>
-          <div className="border border-stone-200 p-8 flex items-center justify-center min-h-32">
-            <Image src={assets.logo('manus-neuro.png')} alt="Manus Neuro" width={160} height={80} className="h-12 w-auto" />
+          <div className="border border-stone-200 p-6">
+            <div className="relative h-24">
+              <Image src={assets.logo('manus-neuro.png')} alt="Manus Neuro" fill className="object-contain" />
+            </div>
           </div>
-          <div className="border border-stone-200 p-8 flex items-center justify-center min-h-32">
-            <Image src={assets.logo('neuro360.png')} alt="Neuro360" width={140} height={60} className="h-12 w-auto" style={{ width: 'auto' }} />
+          <div className="border border-stone-200 p-6">
+            <div className="relative h-24">
+              <Image src={assets.logo('neuro360.png')} alt="Neuro360" fill className="object-contain" />
+            </div>
           </div>
         </div>
       </div>
