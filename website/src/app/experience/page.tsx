@@ -95,10 +95,8 @@ export default function Experience() {
           <div className="col-span-3">
             <p className="text-lg font-medium text-stone-700 mb-3">Senior Director, Enterprise Innovation</p>
             <ul className="space-y-2 text-base text-stone-600 leading-relaxed">
-              <li>Led enterprise innovation strategy across a Fortune 25 managed care organization ($144B revenue)</li>
+              <li>Led enterprise innovation strategy programs across a Fortune 25 managed care organization ($144B revenue)</li>
               <li>Built and managed cross-functional teams driving AI/ML, blockchain, and automation initiatives</li>
-              <li>Filed patent for identity and credential protection via blockchain (US11062038B2, granted 2021)</li>
-              <li>Established innovation governance frameworks connecting R&D to business outcomes</li>
             </ul>
           </div>
         </div>
@@ -138,7 +136,7 @@ export default function Experience() {
               <li>Full P&L responsibility — built the business from zero to a sustainable multi-subsidiary operation</li>
               <li>Led all aspects: strategy, sales, operations, hiring, client relationships, M&A</li>
             </ul>
-            <p className="text-sm text-stone-400 italic">Orlando Business Journal — Entrepreneur of the Month · 40 Under 40</p>
+            <p className="text-sm text-stone-400 italic">Orlando Business Journal — Entrepreneur of the Month & 40 Under 40</p>
           </div>
         </div>
 
@@ -148,13 +146,13 @@ export default function Experience() {
             <div className="h-12 flex items-center">
               <Image src={assets.logo('ump.png')} alt="United Mortgage Partners" width={220} height={48} className="h-8 w-auto" />
             </div>
-            <p className="text-base text-stone-400">1999 – 2003</p>
+            <p className="text-base text-stone-400">2009 – 2011</p>
           </div>
           <div className="col-span-3">
             <p className="text-lg font-medium text-stone-700 mb-3">CTO & Co-Founder</p>
             <ul className="space-y-2 text-base text-stone-600 leading-relaxed">
-              <li>Co-founded mortgage technology company, built the technology platform from scratch</li>
-              <li>Designed and implemented loan origination and processing systems</li>
+              <li>Originated the idea for a new business model concept to support changing regulatory landscape</li>
+              <li>Led the merger of 6 competing firms to create a new platform mortgage lending operation</li>
             </ul>
           </div>
         </div>
