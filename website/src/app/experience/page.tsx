@@ -170,7 +170,7 @@ export default function Experience() {
             <p className="text-base text-stone-400">2009 – 2011</p>
           </div>
           <div className="col-span-3">
-            <p className="text-lg font-medium text-stone-700 mb-3">CTO & Co-Founder</p>
+            <p className="text-lg font-medium text-stone-700 mb-3">President & Founder</p>
             <ul className="space-y-2 text-base text-stone-600 leading-relaxed">
               <li>Originated the idea for a new business model concept to support changing regulatory landscape</li>
               <li>Led the merger of 6 competing firms to create a new platform mortgage lending operation</li>

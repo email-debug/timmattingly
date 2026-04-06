@@ -181,7 +181,7 @@ story.append(bullet('Led senior technology consultants providing advisory leader
 story.append(spacer(4))
 
 # United Mortgage Partners
-story.append(company_date_row('United Mortgage Partners \u2014 CTO &amp; Co-Founder', '2009 \u2013 2011'))
+story.append(company_date_row('United Mortgage Partners \u2014 President &amp; Founder', '2009 \u2013 2011'))
 for b in [
     'Originated concept for a new mortgage platform business model for the post-2008 regulatory environment',
     'Led the merger and integration of 6 mortgage companies to create a unified lending operation',
