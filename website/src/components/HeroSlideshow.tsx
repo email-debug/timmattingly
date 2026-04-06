@@ -4,11 +4,10 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { assets } from '@/lib/assets';
 
-// Landscape images — light crop only (3:2 container), never portrait-crop
 const images = [
-  { src: assets.headshot('headshot-olympics.jpg'), alt: 'Tim at Milano Cortina 2026', position: '70% 25%' },
-  { src: assets.headshot('headshot-alps.jpg'), alt: 'Tim in the Alps', position: '30% 25%' },
-  { src: assets.headshot('headshot-lisbon.jpg'), alt: 'Tim in Lisbon', position: '55% 20%' },
+  { src: assets.headshot('headshot-olympics.jpg'), alt: 'Tim at Milano Cortina 2026' },
+  { src: assets.headshot('headshot-alps.jpg'), alt: 'Tim in the Alps' },
+  { src: assets.headshot('headshot-lisbon.jpg'), alt: 'Tim in Lisbon' },
 ];
 
 export default function HeroSlideshow() {
@@ -27,18 +26,22 @@ export default function HeroSlideshow() {
   }, []);
 
   return (
-    <div className="aspect-[3/2] relative overflow-hidden">
+    <div className="relative w-full" style={{ aspectRatio: '3/2' }}>
       {images.map((img, i) => (
-        <Image
+        <div
           key={img.src}
-          src={img.src}
-          alt={img.alt}
-          fill
-          className="object-cover transition-opacity"
-          style={{ transitionDuration: '600ms', opacity: i === current ? (fading ? 0 : 1) : 0, objectPosition: img.position }}
-          priority={i === 0}
-          sizes="(max-width: 1200px) 40vw, 480px"
-        />
+          className="absolute inset-0 transition-opacity"
+          style={{ transitionDuration: '600ms', opacity: i === current ? (fading ? 0 : 1) : 0 }}
+        >
+          <Image
+            src={img.src}
+            alt={img.alt}
+            fill
+            className="object-contain"
+            priority={i === 0}
+            sizes="(max-width: 1200px) 40vw, 480px"
+          />
+        </div>
       ))}
     </div>
   );
