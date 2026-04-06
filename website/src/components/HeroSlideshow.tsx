@@ -5,9 +5,10 @@ import { useEffect, useState } from 'react';
 import { assets } from '@/lib/assets';
 
 const images = [
-  { src: assets.headshot('headshot-olympics.jpg'), alt: 'Tim at Milano Cortina 2026' },
-  { src: assets.headshot('headshot-alps.jpg'), alt: 'Tim in the Alps' },
-  { src: assets.headshot('headshot-lisbon.jpg'), alt: 'Tim in Lisbon' },
+  { src: assets.headshot('hs-olympics.jpg'), alt: 'Tim at Milano Cortina 2026' },
+  { src: assets.headshot('hs-dolomites.jpg'), alt: 'Tim in the Dolomites' },
+  { src: assets.headshot('hs-iceland.jpg'), alt: 'Tim at Jokulsarlon Glacier Lagoon, Iceland' },
+  { src: assets.headshot('hs-bear.jpg'), alt: 'Tim with a bear behind him, Alaska' },
 ];
 
 export default function HeroSlideshow() {
