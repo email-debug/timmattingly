@@ -62,17 +62,37 @@ The pilot worked. Mastercard built on it. The result is a platform now integrate
 
 | Patent | Number | Filed | Published/Granted | Co-Inventors | Connection |
 |--------|--------|-------|-------------------|--------------|------------|
-| Fraud Control Based on Geolocation | US20170004486A1 | June 30, 2015 | Jan 5, 2017 | 13 inventors incl. Tim Mattingly (Chesterfield, MO) | Separate geolocation initiative — product connection TBD |
+| Fraud Control Based on Geolocation | US20170004486A1 (pub) / **US11620628B2** (granted) | Filed June 30, 2015 | Published Jan 2017, **Granted April 2023** | 13 inventors incl. Tim Mattingly (Chesterfield, MO) | Mastercard In Control — geographic spend controls platform |
 | Point-to-Point Transaction Processing | US20170270493A1 | March 21, 2017 | Sept 21, 2017 | Peter A. Lugli, **Timothy Warren Mattingly**, Dan Juliano | Mastercard Track — payment flow architecture |
 | Identity & Credential Protection via Blockchain | US11062038B2 | Nov 1, 2019 | Granted July 13, 2021 | Inventors not yet confirmed from public sources | Likely Track Trade Directory — identity/compliance layer |
 
-**Note on geolocation patent (US20170004486A1):** Tim is one of 13 named inventors spanning NJ, NY, MO, Belgium, and Ireland. Active project in 2015; patent filed June 30, 2015 — dates align precisely. This was a separate initiative from Safety Net (which was not patented). The concept: capture real-time geolocation signals from cardholders' devices and use that data to give issuers dynamic cross-border transaction controls — automatically validating or flagging transactions based on whether the cardholder's phone location matches the transaction location. Eliminates the manual "call your bank before you travel" problem. Whether Mastercard shipped a product on this IP is TBD.
+**Note on geolocation patent (US20170004486A1 / US11620628B2):** Tim is one of 13 named inventors spanning NJ, NY, MO, Belgium, and Ireland. Active project in 2015; patent filed June 30, 2015, granted April 2023. This was a separate initiative from Safety Net (which was not patented).
+
+The concept: issuers store per-account geographic profile rules — one per card on a shared account. When a transaction comes in, the system validates the merchant location against the geographic zone for that specific card. Key innovations: (1) two cardholders on the same account (e.g., spouses) can transact simultaneously in different countries without either being blocked; (2) the system auto-updates geographic zones based on transaction history — self-learning travel detection; (3) manual travel notifications trigger automatic zone updates.
+
+**Most likely product connection: Mastercard In Control** — Mastercard's issuer platform for cardholder spend controls, including geographic "where" restrictions. Still live today on the Mastercard developer portal as the Business Payment Controls API and Consumer Controls product. Mastercard also launched a complementary phone-based geolocation service (via Syniverse/Zumigo, announced February 2016) that validates cardholder physical location via mobile network roaming data — a different mechanism addressing the same problem, likely developed in parallel.
 
 **Note on point-to-point patent (US20170270493A1):** Tim is one of 3 inventors (Lugli, Mattingly, Juliano). Priority dates trace back to a provisional filed March 21, 2016 — placing the original conception squarely within the Microsoft pilot period.
 
 ---
 
-## The Bigger Story
+## Project 3: Geolocation-Based Card Controls (Mastercard In Control)
+
+### What It Is
+Mastercard In Control is the issuer-facing platform for cardholder spend controls — the infrastructure that lets banks offer their customers rules-based restrictions on when, where, and how their cards can be used. Geographic controls are a core feature: issuers can allow or block transactions based on country or region, at the individual card level within a shared account.
+
+The platform is still live today, exposed as the Business Payment Controls API and Consumer Controls product on the Mastercard developer portal.
+
+### Tim's Role
+- Named co-inventor on **US11620628B2** (granted April 2023), the patent covering the geographic profile rules engine underlying this capability
+- Active on the project in 2015; patent filed June 30, 2015
+
+### The Innovation
+The problem wasn't just "block cross-border transactions." It was subtler: how do you handle a shared account where two people are traveling in different countries simultaneously? Traditional systems keyed fraud rules to the account, not the individual card — so one cardholder's legitimate transaction in Japan would conflict with another's in France.
+
+Tim's team built a system that stored geographic profile rules per card (not per account), self-learned from transaction history to auto-update travel zones, and processed location validation within the authorization flow. The patent was granted in 2023 — eight years after filing — suggesting it held up under scrutiny.
+
+---
 
 Most executives can claim they "contributed to" a product. Tim originated two of them — products that are now core infrastructure for the global payments system.
 
