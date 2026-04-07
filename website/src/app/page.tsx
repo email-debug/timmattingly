@@ -86,8 +86,8 @@ export default function Home() {
           <div className="bg-white p-10">
             <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-4">Enterprise Leadership</p>
             <p className="text-base text-stone-600 leading-relaxed">
-              Built and led technology organizations at Centene and Mastercard. Three patents.
-              Enterprise innovation at scale — compliance, security, stakeholder management.
+              Conceived and built the foundations of 5 product lines at Mastercard. Three patents.
+              Led COVID outreach to 25M members at Centene. Enterprise innovation at scale.
             </p>
           </div>
           <div className="bg-white p-10">

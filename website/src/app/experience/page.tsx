@@ -116,8 +116,12 @@ export default function Experience() {
           <div className="col-span-3">
             <p className="text-lg font-medium text-stone-700 mb-3">Senior Director, Enterprise Innovation</p>
             <ul className="space-y-2 text-base text-stone-600 leading-relaxed">
-              <li>Led enterprise innovation strategy programs across a Fortune 25 managed care organization ($144B revenue)</li>
-              <li>Built and managed cross-functional teams driving AI/ML, blockchain, and automation initiatives</li>
+              <li>Led company-wide COVID-19 customer outreach to 25 million members — consolidated phone, email, and text channels across all markets and all lines of business for the first time in company history. Enterprise-wide launch in under 60 days</li>
+              <li>Led enterprise innovation strategy — managing a portfolio of AI/ML, blockchain, automation, and digital product programs from ideation through launch</li>
+              <li>Digital products strategy lead for $20B line of business; aligned corporate strategy with technology investment and product roadmaps</li>
+              <li>Identified $30M in new savings opportunities and led programs to capture them</li>
+              <li>Increased live agent call containment 250% deploying a virtual call center agent built on AI, ML, and NLP</li>
+              <li>Led enterprise blockchain partnerships including the Synaptic Health Alliance</li>
             </ul>
           </div>
         </div>
