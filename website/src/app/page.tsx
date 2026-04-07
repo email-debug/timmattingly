@@ -42,7 +42,7 @@ export default function Home() {
                 <div className="h-10 flex items-center">
                   <Image src={assets.logo('centene.svg')} alt="Centene" width={160} height={40} style={{ height: '36px', width: 'auto' }} />
                 </div>
-                <p className="text-sm font-bold text-stone-700 text-center">Enterprise Innovation<br />&amp; Digital Strategy</p>
+                <p className="text-sm font-medium text-stone-600 text-center">Enterprise Innovation<br />&amp; Digital Strategy</p>
                 <p className="text-xs text-stone-400 text-center">$160B Fortune 25 Healthcare Company</p>
               </div>
               <div className="flex flex-col items-center gap-2 shrink-0 w-56">
