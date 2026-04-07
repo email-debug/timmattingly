@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="max-w-6xl mx-auto px-8 pt-16 pb-10">
-        <div className="grid grid-cols-2 gap-16 items-start">
+      <section className="max-w-6xl mx-auto px-8 pt-6 pb-6">
+        <div className="grid grid-cols-2 gap-12 items-start">
           <div>
             <p className="text-sm font-medium text-stone-400 tracking-widest uppercase mb-4">Ballwin, Missouri</p>
             <h1 className="text-6xl font-light text-stone-900 leading-tight mb-5">Tim Mattingly</h1>
@@ -34,7 +34,7 @@ export default function Home() {
       </section>
 
       {/* Career highlights — scrolling logo strip */}
-      <section className="border-t border-stone-100 py-8 overflow-hidden">
+      <section className="border-t border-stone-100 py-5 overflow-hidden">
         <div className="flex animate-scroll gap-16 w-max">
           {[...Array(2)].map((_, copy) => (
             <div key={copy} className="flex gap-16 shrink-0">
@@ -80,9 +80,9 @@ export default function Home() {
       </section>
 
       {/* What I bring — clickable cards */}
-      <section className="max-w-6xl mx-auto px-8 py-10 border-t border-stone-100">
+      <section className="max-w-6xl mx-auto px-8 py-6 border-t border-stone-100">
         <div className="grid grid-cols-3 gap-px bg-stone-200">
-          <Link href="/experience" className="bg-white p-8 hover:bg-stone-50 transition-colors group">
+          <Link href="/experience" className="bg-white p-6 hover:bg-stone-50 transition-colors group">
             <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-3">Enterprise Leadership</p>
             <p className="text-base text-stone-600 leading-relaxed">
               Conceived and built the foundations of 5 new product lines at Mastercard. Three patented inventions.
@@ -90,7 +90,7 @@ export default function Home() {
             </p>
             <p className="text-sm text-stone-400 group-hover:text-stone-600 mt-3 transition-colors">Learn more →</p>
           </Link>
-          <Link href="/projects" className="bg-white p-8 hover:bg-stone-50 transition-colors group">
+          <Link href="/projects" className="bg-white p-6 hover:bg-stone-50 transition-colors group">
             <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-3">Builder</p>
             <p className="text-base text-stone-600 leading-relaxed mb-2">
               Grew Equilliance from startup to 300 people. Acquired 9 competitors and started 6 companies.
@@ -101,7 +101,7 @@ export default function Home() {
             </p>
             <p className="text-sm text-stone-400 group-hover:text-stone-600 mt-3 transition-colors">Learn more →</p>
           </Link>
-          <Link href="/projects/build-engine" className="bg-white p-8 hover:bg-stone-50 transition-colors group">
+          <Link href="/projects/build-engine" className="bg-white p-6 hover:bg-stone-50 transition-colors group">
             <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-3">AI-Native</p>
             <p className="text-base text-stone-600 leading-relaxed">
               Built a custom AI orchestration engine that ships production software autonomously.
