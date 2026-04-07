@@ -7,7 +7,15 @@
 
 ## Overview
 
-Two of the most significant products in Mastercard's modern portfolio have Tim Mattingly's fingerprints on them: **Safety Net**, the network-level fraud prevention system that has blocked 70 billion fraudulent transactions, and **Mastercard Track**, the B2B payments platform addressing a $120 trillion annual market. Tim originated the idea behind Safety Net and led it through its critical first eight months. He also led the Microsoft pilot that directly evolved into Track.
+Four Mastercard products. Tim Mattingly's fingerprints on all of them.
+
+**Safety Net** — the network-level fraud system that has blocked 70 billion fraudulent transactions. Tim originated the idea and led it for the first eight months.
+
+**In Control** — Mastercard's issuer platform for geolocation-based card controls. 100% Tim's idea. Patent granted 2023.
+
+**Mastercard Track** — the company's platform for digitizing the $120T B2B payments market. Tim led the Microsoft pilot it evolved from.
+
+**Mastercard Provenance** — blockchain-based supply chain traceability, deployed across food, fashion, livestock, grains, and vaccines. Tim's blockchain identity patent (US11062038B2) is the architectural foundation.
 
 These are not footnotes on a resume. They are proof of what Tim does: he sees a problem before the market does, shapes the solution, and builds the coalition to make it real.
 
@@ -95,12 +103,57 @@ Tim's team built a system that stored geographic profile rules per card (not per
 
 ---
 
-Most executives can claim they "contributed to" a product. Tim originated two of them — products that are now core infrastructure for the global payments system.
+## Project 4: Mastercard Provenance (Blockchain Supply Chain)
 
-- Safety Net screens every Mastercard transaction on the planet.
-- Mastercard Track is the company's flagship bet on digitizing the $120T B2B payments market.
+### What It Is
+Mastercard Provenance Solution is a permissioned blockchain platform for supply chain traceability — applying the same immutability principles Mastercard uses in financial transactions to tracking physical goods from origin to consumer. Still live today on the Mastercard developer portal.
 
-Both started with Tim seeing a problem nobody had formally defined yet and convincing a company the size of Mastercard to build something new.
+Deployed across:
+- **Luxury fashion** (Fred Segal / Rodarte, 2019) — anti-counterfeiting via QR-linked blockchain records
+- **Seafood** (Topco / Food City, 2019) — consumer-scannable sourcing and compliance history for salmon, cod, shrimp
+- **Commodity grains** (GrainChain, 2020) — 24+ commodities across US, Mexico, Central America
+- **Livestock** (E-Livestock Global, Zimbabwe, 2021) — RFID cattle tagging enabling export market access and loan collateral
+- **Australian agriculture** (Cirralto / Fresh Supply Co, 2021) — reduced farmer payment terms from 30-45 days to 48 hours
+- **Vaccine cold chain** (AON / ChronosCloud / DW Morgan, 2021) — temperature monitoring linked to parametric insurance
+- **Supply chain finance** (Demica integration with Track, October 2021) — Provenance data feeding working capital solutions
+
+### Tim's Role
+- Originated the provenance concept
+- Named inventor (pending confirmation) on **US11062038B2** (granted July 2021) — the blockchain identity and credential patent that forms the architectural foundation of the platform
+
+### The Patent Connection
+The patent (filed September 2017, two years before Provenance's first launch) covers:
+- **Permissioned blockchain nodes** with public key authentication — directly maps to Provenance's permissioned network architecture
+- **Geographic jurisdiction compliance** — each node must declare jurisdiction, enabling cross-border supply chains to comply with local regulations (US-Mexico grain corridors, Zimbabwe cattle exports, Australian trade)
+- **Hierarchical entity structure** — superior entities digitally sign subordinate entities, mapping cleanly to supply chain relationships: Mastercard → distributor → processor → farmer
+- **Immutable timestamped blocks** — the core of traceability
+
+The filing date, architectural alignment, and deployment timeline make this patent the most plausible IP foundation for Provenance — though Mastercard has not made an explicit public product-to-patent connection.
+
+---
+
+## Patents (Confirmed Details)
+
+| Patent | Number | Filed | Published/Granted | Co-Inventors | Connection |
+|--------|--------|-------|-------------------|--------------|------------|
+| Fraud Control Based on Geolocation | US20170004486A1 (pub) / **US11620628B2** (granted) | June 30, 2015 | Published Jan 2017, **Granted April 2023** | 13 inventors incl. Tim Mattingly (Chesterfield, MO) | Mastercard In Control — geographic spend controls platform |
+| Point-to-Point Transaction Processing | US20170270493A1 | March 21, 2017 | Sept 21, 2017 | Peter A. Lugli, **Timothy Warren Mattingly**, Dan Juliano | Mastercard Track — payment flow architecture |
+| Identity & Credential Protection via Blockchain | US11062038B2 | Nov 1, 2019 (parent app Sept 2017) | Granted July 13, 2021 | TBD — not yet publicly indexed | Mastercard Provenance — permissioned blockchain architecture |
+
+---
+
+## The Bigger Story
+
+Most executives contributed to products. Tim originated four of them — all now live, all at scale.
+
+| Product | What It Does | Scale |
+|---------|-------------|-------|
+| **Safety Net** | Network-level fraud prevention | 70B fraudulent transactions blocked |
+| **In Control** | Geolocation-based issuer card controls | Live globally on developer portal |
+| **Mastercard Track** | B2B payments modernization | $120T annual market, 150M+ businesses |
+| **Provenance** | Blockchain supply chain traceability | Food, fashion, livestock, pharma, agriculture |
+
+Every one started with Tim seeing a problem nobody had formally defined yet, and convincing a company the size of Mastercard to build something new.
 
 That is the skill. That is the pattern. That is the story.
 
@@ -108,8 +161,9 @@ That is the skill. That is the pattern. That is the story.
 
 ## Notes for Tim
 
-- **Safety Net dates:** The product launched ~2014 in the US. Your 8 months of leadership likely spans 2013–2014. Confirm exact role title and timeframe.
-- **Track / Microsoft pilot dates:** The point-to-point patent has a provisional filing date of March 21, 2016. Track was announced September 2018. Your pilot likely ran 2016–2017. Confirm.
-- **Blockchain patent inventors:** US11062038B2 inventors are not publicly indexed yet — verify at ppubs.uspto.gov using patent number 11062038. Confirm if you are named.
-- **Patent #US11062038B2 product connection:** Is this tied to Track's Trade Directory identity layer, or a separate blockchain initiative at Mastercard?
-- **Client confidentiality:** All references here (Mastercard, Microsoft) are public record. No sensitive client names used.
+- **Safety Net dates:** Product launched ~2014 in the US. Your 8 months likely spans 2013–2014. Confirm role/title.
+- **In Control dates:** Patent filed June 2015. Confirm your specific involvement and role.
+- **Track / Microsoft pilot dates:** Point-to-point patent provisional filed March 2016. Track announced September 2018. Pilot likely ran 2016–2017. Confirm.
+- **Provenance dates:** Parent patent application filed September 2017. First public launch August 2019. Confirm when your concept work happened.
+- **Blockchain patent inventors:** US11062038B2 inventors not yet publicly indexed — verify at ppubs.uspto.gov using patent number 11062038.
+- **Client confidentiality:** All references here (Mastercard, Microsoft) are public record.

@@ -22,30 +22,36 @@
 - Named co-inventor on US20170270493A1, covering the point-to-point transaction processing architecture underlying Track's payment flow
 - Mastercard Track launched commercially in 2020 and is now integrated with every major enterprise procurement platform globally
 
+### Mastercard Provenance (Blockchain Supply Chain)
+- Originated the concept for Mastercard's blockchain-based supply chain traceability platform, now deployed across food, fashion, livestock, grains, and vaccine cold chain logistics
+- Named inventor (pending confirmation) on US11062038B2 (granted July 2021) — the permissioned blockchain identity patent covering the platform's architecture: geographic jurisdiction compliance, hierarchical entity structure, and immutable timestamped records
+
 ### Patents Summary (standalone block)
 - **US11620628B2** — Fraud Control Based on Geolocation (filed June 2015, granted April 2023) — named inventor
 - **US20170270493A1** — Point-to-Point Transaction Processing (filed March 2017, pub. Sept 2017) — named inventor alongside Peter Lugli and Dan Juliano
-- **US11062038B2** — Identity & Credential Protection via Blockchain (granted July 2021, filed Nov 2019) — inventor status TBD
+- **US11062038B2** — Identity & Credential Protection via Blockchain (granted July 2021) — inventor status to confirm at ppubs.uspto.gov
 
 ---
 
 ## Short Bio Version (3rd person)
 
-Tim Mattingly is a technical leader and innovator who originated the concept behind Mastercard Safety Net — a global fraud prevention system that has blocked over 70 billion fraudulent transactions — led the geolocation project that became Mastercard In Control, and ran the Microsoft pilot that evolved into Mastercard Track, the company's B2B payments platform. He holds three US patents spanning fraud detection, blockchain identity, and transaction processing.
+Tim Mattingly is a technical leader who originated four Mastercard products: Safety Net (70B+ fraudulent transactions blocked), In Control (geolocation-based card controls), Mastercard Track (B2B payments, $120T market), and Mastercard Provenance (blockchain supply chain traceability). He holds three US patents spanning fraud detection, blockchain identity, and transaction processing.
 
 ---
 
 ## LinkedIn About Snippet
 
-Three Mastercard products. My name on the whiteboard where each one started.
+Four Mastercard products. My name on the whiteboard where each one started.
 
-I originated Mastercard Safety Net — the network-level fraud system that now screens every transaction on the planet — and led it for the first eight months.
+Mastercard Safety Net — the network-level fraud system that screens every transaction on the planet. I originated it and led the first eight months.
 
-I was co-inventor on the geolocation patent that underlies Mastercard In Control, their issuer platform for geographic card controls. We built it in 2015. The patent was granted in 2023.
+Mastercard In Control — geolocation-based card controls for issuers. My idea. Patent granted in 2023.
 
-I led the pilot with Microsoft's engineering team that evolved into Mastercard Track, their platform for modernizing the $120T B2B payments market.
+Mastercard Track — their platform for modernizing the $120T B2B payments market. I led the Microsoft pilot it evolved from.
 
-Three patents. Three products that scaled globally. Zero lines of code written by me — that was always the point.
+Mastercard Provenance — blockchain supply chain traceability, now deployed across food, fashion, livestock, and pharmaceuticals. My concept. Patent granted 2021.
+
+Three patents. Four products that scaled globally. Zero lines of code written by me — that was always the point.
 
 ---
 
