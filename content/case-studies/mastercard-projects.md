@@ -25,7 +25,7 @@ It launched in the United States in 2014, expanded to Europe in 2015, and is now
 ### Tim's Role
 - **Originated the idea** — identified the gap between issuer-level fraud controls and the need for a network-level defense layer
 - **Led the project for the first 8 months** — shaped the product vision, drove early development, and built internal alignment
-- Holds a **patent in fraud control based on geolocation** (US20170004486A1), directly aligned with Safety Net's core detection methodology
+- Safety Net itself was not patented
 
 ### The Narrative
 The problem was structural: every bank had its own fraud system tuned to its own portfolio. None of them could see the full network picture. A coordinated attacker exploiting 50 banks simultaneously would look like noise to each individual bank — but it would look like a pattern to anyone watching the whole network. Tim saw that gap and proposed building the system that could watch the whole network.
@@ -62,11 +62,11 @@ The pilot worked. Mastercard built on it. The result is a platform now integrate
 
 | Patent | Number | Filed | Published/Granted | Co-Inventors | Connection |
 |--------|--------|-------|-------------------|--------------|------------|
-| Fraud Control Based on Geolocation | US20170004486A1 | June 30, 2015 | Jan 5, 2017 | 13 inventors incl. Tim Mattingly (Chesterfield, MO) | Safety Net — core geolocation detection methodology |
+| Fraud Control Based on Geolocation | US20170004486A1 | June 30, 2015 | Jan 5, 2017 | 13 inventors incl. Tim Mattingly (Chesterfield, MO) | Separate geolocation initiative — product connection TBD |
 | Point-to-Point Transaction Processing | US20170270493A1 | March 21, 2017 | Sept 21, 2017 | Peter A. Lugli, **Timothy Warren Mattingly**, Dan Juliano | Mastercard Track — payment flow architecture |
 | Identity & Credential Protection via Blockchain | US11062038B2 | Nov 1, 2019 | Granted July 13, 2021 | Inventors not yet confirmed from public sources | Likely Track Trade Directory — identity/compliance layer |
 
-**Note on geolocation patent (US20170004486A1):** Tim is one of 13 named inventors. Other inventors span NJ, NY, MO, Belgium, and Ireland — reflecting the cross-functional, multi-geography team that built Safety Net. This is consistent with a program Tim originated and led: the team he built shows up on the patent.
+**Note on geolocation patent (US20170004486A1):** Tim is one of 13 named inventors spanning NJ, NY, MO, Belgium, and Ireland. This was a separate initiative from Safety Net (which was not patented). The specific product this patent connects to is TBD — researching whether Mastercard shipped a geolocation-based spend control product.
 
 **Note on point-to-point patent (US20170270493A1):** Tim is one of 3 inventors (Lugli, Mattingly, Juliano). Priority dates trace back to a provisional filed March 21, 2016 — placing the original conception squarely within the Microsoft pilot period.
 
