@@ -79,26 +79,17 @@ Elected president of the Woodsmill homeowners association.
 
 ---
 
-### Mastercard — Vice President, Enterprise Partnerships
+### Mastercard — VP of Enterprise Partnerships · VP of Product Development · VP of Technology
 **2011 – 2018**
 
-*Mastercard — Fortune 500 global payments technology company*
+*Fortune 500 global payments technology company*
 
-Held two VP roles across seven years, progressing from technology leadership to enterprise product and partnerships.
-
-**VP of Product Development, Enterprise Partnerships**
-
-- Full lifecycle product management and go-to-market execution for financial services products developed with strategic partners and global financial institutions
-- Global product management for $10B wholesale travel payments program — $100M gross income; drove product expansion opportunities
-- Invented and led development of a new global service with Syniverse using mobile network geolocation data to reduce bank customer service costs by 80%
-- Created new global trade services in partnership with the Singapore government: trade finance, vendor management, accounts payable and receivable
-- Developed a comprehensive customer acquisition and loyalty program reaching millions of millennial customers in partnership with SFX (global electronic music festivals) — included contactless payments and access control systems
-- Led technology innovation across urban mass transit, smart cities, global travel, and packaged goods distribution
-- Invented three issued and pending patents: blockchain identity verification, geolocation-based fraud control, and point-to-point transaction processing
-
-**VP, Technology Relationship Management**
-
-- Led a team of senior technology consultants providing advisory leadership and defining product requirements for large-scale payment systems
+- Originated the idea behind Mastercard Safety Net and led the project for its first 8 months — now a core network-level fraud prevention system that has blocked 70B+ fraudulent transactions
+- Invented Mastercard In Control — cardholder geolocation signals enabling issuers to manage cross-border spend controls automatically. Patent granted (US11620628B2)
+- Led a pilot with Microsoft's lead engineering team for a B2B payments system that evolved into Mastercard Track — now addressing the $120T annual B2B payments market. Patent filed (US20170270493A1)
+- Led Mastercard's first-year engagement with Singapore's IMDA to digitize global trade — the genesis of TradeTrust, now backed by 17+ global firms
+- Conceptualized the blockchain architecture behind Mastercard Provenance Solution — supply chain traceability across food, fashion, livestock, and pharma. Patent granted (US11062038B2)
+- Global product management for $10B wholesale travel payments program — $100M gross income
 
 ---
 

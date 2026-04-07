@@ -50,8 +50,8 @@ export default function Home() {
                 <div className="h-10 flex items-center">
                   <Image src={assets.logo('mastercard.svg')} alt="Mastercard" width={200} height={40} style={{ height: '40px', width: 'auto' }} />
                 </div>
-                <p className="text-sm font-medium text-stone-600 text-center">VP Strategic Partnerships</p>
-                <p className="text-xs text-stone-400 text-center">Leading Global Product Team with $100M Net Income</p>
+                <p className="text-sm font-medium text-stone-600 text-center">VP of Enterprise Partnerships</p>
+                <p className="text-xs text-stone-400 text-center">Conceived &amp; built foundations of 5 product lines · 3 patents</p>
               </div>
               <div className="flex flex-col items-center gap-2 shrink-0 w-56">
                 <div className="h-10 flex items-center">

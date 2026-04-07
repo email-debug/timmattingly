@@ -165,19 +165,17 @@ for b in [
 story.append(spacer(4))
 
 # Mastercard
-story.append(company_date_row('Mastercard \u2014 Vice President, Enterprise Partnerships', '2011 \u2013 2018'))
-story.append(Paragraph('<i>Fortune 500 global payments technology company</i>', s_italic))
-story.append(Paragraph('<b>VP of Product Development, Enterprise Partnerships</b>', s_sub_role))
+story.append(company_date_row('Mastercard \u2014 Conceived and built the foundations of 5 product lines \u00b7 3 patents', '2011 \u2013 2018'))
+story.append(Paragraph('<i>VP of Enterprise Partnerships \u00b7 VP of Product Development \u00b7 VP of Technology</i>', s_italic))
 for b in [
+    'Conceived the architecture behind Mastercard Safety Net and led the first 8 months of development \u2014 now blocks 70B+ fraudulent transactions',
+    'Invented Mastercard In Control \u2014 cardholder geolocation signals for issuer cross-border spend controls \u2014 led development through handoff. Patent granted (US11620628B2)',
+    'Contributed pivotal early ideas and led the Microsoft pilot that proved the model for Mastercard Track ($120T B2B market). Patent filed (US20170270493A1)',
+    'Built the Singapore/IMDA relationship and authored blockchain architecture white papers \u2014 foundation of TradeTrust, now backed by 17+ global firms',
+    'Led the team that designed the blockchain identity/verification architecture behind Mastercard Provenance Solution. Patent granted (US11062038B2)',
     'Global product management for $10B wholesale travel payments program \u2014 $100M gross income',
-    'Invented new global service using mobile geolocation to reduce bank customer service costs by 80%',
-    'Created global trade services in partnership with the Singapore government: trade finance, vendor management, AP/AR',
-    'Customer acquisition program reaching millions of millennial customers via SFX (global electronic music festivals)',
-    'Three issued patents: blockchain identity verification, geolocation-based fraud control, point-to-point transactions',
 ]:
     story.append(bullet(b))
-story.append(Paragraph('<b>VP, Technology Relationship Management</b>', s_sub_role))
-story.append(bullet('Led senior technology consultants providing advisory leadership and product requirements for large-scale payment systems'))
 story.append(spacer(4))
 
 # United Mortgage Partners

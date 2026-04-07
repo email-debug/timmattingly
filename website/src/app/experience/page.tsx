@@ -25,7 +25,7 @@ export default function Experience() {
           </div>
           <div className="flex items-baseline gap-4">
             <p className="text-2xl font-light text-stone-900 whitespace-nowrap w-36 shrink-0">Fortune 500</p>
-            <p className="text-sm text-stone-400 leading-snug">Mastercard — VP Strategic Partnerships</p>
+            <p className="text-sm text-stone-400 leading-snug">Mastercard — VP of Enterprise Partnerships</p>
           </div>
           <div className="flex items-baseline gap-4">
             <p className="text-2xl font-light text-stone-900 whitespace-nowrap w-36 shrink-0">300 people</p>
@@ -131,12 +131,15 @@ export default function Experience() {
             <p className="text-base text-stone-400">2011 – 2018</p>
           </div>
           <div className="col-span-3">
-            <p className="text-lg font-medium text-stone-700 mb-3">VP Strategic Partnerships</p>
+            <p className="text-lg font-medium text-stone-700 mb-1">Conceived and built the foundations of 5 product lines · 3 patents</p>
+            <p className="text-sm text-stone-400 mb-3">VP of Enterprise Partnerships · VP of Product Development · VP of Technology</p>
             <ul className="space-y-2 text-base text-stone-600 leading-relaxed">
-              <li>Managed strategic technology partnerships and product integrations across the payments ecosystem</li>
-              <li>Led geolocation-based fraud prevention initiatives — two patents filed (US20170004486A1, US20170270493A1)</li>
-              <li>Drove partner integration strategy for new payment products and platforms</li>
-              <li>Built relationships across financial institutions, fintechs, and technology providers</li>
+              <li>Conceived the architecture behind Mastercard Safety Net and led the first 8 months of development — now blocks 70B+ fraudulent transactions</li>
+              <li>Invented Mastercard In Control — cardholder geolocation signals for issuer cross-border spend controls — and led development through handoff. Patent granted (US11620628B2)</li>
+              <li>Contributed pivotal early ideas and led the Microsoft pilot that proved the model for Mastercard Track — now addressing the $120T B2B payments market. Patent filed (US20170270493A1)</li>
+              <li>Built the Singapore/IMDA relationship and authored blockchain architecture white papers — the foundation of TradeTrust, now backed by 17+ global firms</li>
+              <li>Led the team that designed the blockchain identity/verification architecture behind Mastercard Provenance Solution — supply chain traceability for food, fashion, livestock, and pharma. Patent granted (US11062038B2)</li>
+              <li>Global product management for $10B wholesale travel payments program — $100M gross income</li>
             </ul>
           </div>
         </div>
