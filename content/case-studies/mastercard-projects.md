@@ -58,13 +58,17 @@ The pilot worked. Mastercard built on it. The result is a platform now integrate
 
 ---
 
-## Patents (Connected)
+## Patents (Confirmed Details)
 
-| Patent | Number | Connection |
-|--------|--------|------------|
-| Fraud Control Based on Geolocation | US20170004486A1 | Safety Net — core detection methodology |
-| Point-to-Point Transaction Processing | US20170270493A1 | Mastercard Track — payment flow architecture |
-| Identity & Credential Protection via Blockchain | US11062038B2 (2021) | Potentially Track Trade Directory — identity/compliance layer |
+| Patent | Number | Filed | Published/Granted | Co-Inventors | Connection |
+|--------|--------|-------|-------------------|--------------|------------|
+| Fraud Control Based on Geolocation | US20170004486A1 | June 30, 2015 | Jan 5, 2017 | 13 inventors incl. Tim Mattingly (Chesterfield, MO) | Safety Net — core geolocation detection methodology |
+| Point-to-Point Transaction Processing | US20170270493A1 | March 21, 2017 | Sept 21, 2017 | Peter A. Lugli, **Timothy Warren Mattingly**, Dan Juliano | Mastercard Track — payment flow architecture |
+| Identity & Credential Protection via Blockchain | US11062038B2 | Nov 1, 2019 | Granted July 13, 2021 | Inventors not yet confirmed from public sources | Likely Track Trade Directory — identity/compliance layer |
+
+**Note on geolocation patent (US20170004486A1):** Tim is one of 13 named inventors. Other inventors span NJ, NY, MO, Belgium, and Ireland — reflecting the cross-functional, multi-geography team that built Safety Net. This is consistent with a program Tim originated and led: the team he built shows up on the patent.
+
+**Note on point-to-point patent (US20170270493A1):** Tim is one of 3 inventors (Lugli, Mattingly, Juliano). Priority dates trace back to a provisional filed March 21, 2016 — placing the original conception squarely within the Microsoft pilot period.
 
 ---
 
@@ -83,7 +87,8 @@ That is the skill. That is the pattern. That is the story.
 
 ## Notes for Tim
 
-- **Dates to confirm:** When specifically did you work on Safety Net? (The product launched ~2014 in the US, so your 8 months would likely be 2013–2014.) When was the Microsoft B2B pilot? (Track was announced September 2018, so the pilot likely preceded that.)
-- **Co-inventors to confirm:** Are you listed as inventor on all three patents, or co-inventor? The point-to-point patent search also surfaced "Peter A. Lugli" — was this a co-invention?
-- **Client confidentiality:** This doc uses no sensitive client names. Standard Mastercard/Microsoft references are public record.
-- **Patent #US11062038B2 (Blockchain/Identity):** Need to confirm the exact connection — is this tied to Track's Trade Directory or to a separate initiative?
+- **Safety Net dates:** The product launched ~2014 in the US. Your 8 months of leadership likely spans 2013–2014. Confirm exact role title and timeframe.
+- **Track / Microsoft pilot dates:** The point-to-point patent has a provisional filing date of March 21, 2016. Track was announced September 2018. Your pilot likely ran 2016–2017. Confirm.
+- **Blockchain patent inventors:** US11062038B2 inventors are not publicly indexed yet — verify at ppubs.uspto.gov using patent number 11062038. Confirm if you are named.
+- **Patent #US11062038B2 product connection:** Is this tied to Track's Trade Directory identity layer, or a separate blockchain initiative at Mastercard?
+- **Client confidentiality:** All references here (Mastercard, Microsoft) are public record. No sensitive client names used.

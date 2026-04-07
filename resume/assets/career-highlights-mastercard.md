@@ -18,9 +18,9 @@
 - Mastercard Track launched commercially in 2020 and is now integrated with every major enterprise procurement platform globally
 
 ### Patents Summary (standalone block)
-- **US11062038B2** — Identity & Credential Protection via Blockchain (granted 2021)
-- **US20170004486A1** — Fraud Control Based on Geolocation
-- **US20170270493A1** — Point-to-Point Transaction Processing
+- **US11062038B2** — Identity & Credential Protection via Blockchain (granted July 2021, filed Nov 2019)
+- **US20170004486A1** — Fraud Control Based on Geolocation (filed June 2015, pub. Jan 2017) — named inventor
+- **US20170270493A1** — Point-to-Point Transaction Processing (filed March 2017, pub. Sept 2017) — named inventor alongside Peter Lugli and Dan Juliano
 
 ---
 
