@@ -86,14 +86,14 @@ export default function Home() {
           <div className="bg-white p-10">
             <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-4">Enterprise Leadership</p>
             <p className="text-base text-stone-600 leading-relaxed">
-              Conceived and built the foundations of 5 product lines at Mastercard. Three patents.
+              Conceived and built the foundations of 5 new product lines at Mastercard. Three patented inventions.
               Led COVID outreach to 25M members at Centene. Enterprise innovation at scale.
             </p>
           </div>
           <div className="bg-white p-10">
             <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-4">Builder</p>
             <p className="text-base text-stone-600 leading-relaxed mb-3">
-              Grew Equilliance from startup to 300 people across 5 subsidiaries. Acquired 4 competitors.
+              Grew Equilliance from startup to 300 people. Acquired 9 competitors and started 6 companies.
             </p>
             <p className="text-base text-stone-600 leading-relaxed">
               Now building an AI Concierge Travel Planning system.{' '}
