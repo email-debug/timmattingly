@@ -84,6 +84,7 @@ Mastercard In Control is the issuer-facing platform for cardholder spend control
 The platform is still live today, exposed as the Business Payment Controls API and Consumer Controls product on the Mastercard developer portal.
 
 ### Tim's Role
+- **Originated the idea** — the concept was entirely Tim's
 - Named co-inventor on **US11620628B2** (granted April 2023), the patent covering the geographic profile rules engine underlying this capability
 - Active on the project in 2015; patent filed June 30, 2015
 

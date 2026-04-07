@@ -13,8 +13,9 @@
 - Note: Safety Net was not patented
 
 ### Mastercard In Control (Geolocation Card Controls)
+- **Originated the idea** for using real-time geolocation signals to give issuers dynamic cross-border transaction controls — eliminating false declines for legitimate travelers
 - Named co-inventor on US11620628B2 (granted April 2023), covering geographic profile rules for issuer card controls — per-card geographic zones, self-learning travel detection, simultaneous multi-country support for shared accounts
-- Project active 2015; core concept: use real-time geolocation signals to give issuers dynamic cross-border transaction controls, eliminating false declines for legitimate travelers
+- Project active 2015
 
 ### Mastercard Track
 - Led a pilot with Microsoft's lead engineering team on a B2B payments architecture that directly evolved into Mastercard Track, Mastercard's flagship platform for digitizing the $120T B2B payments market
