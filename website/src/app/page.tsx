@@ -7,27 +7,27 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="max-w-6xl mx-auto px-8 pt-6 pb-6">
-        <div className="grid grid-cols-2 gap-12 items-start">
-          <div>
+      <section className="max-w-6xl mx-auto px-4 md:px-8 pt-6 pb-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
+          <div className="order-2 md:order-1">
             <p className="text-sm font-medium text-stone-400 tracking-widest uppercase mb-4">Ballwin, Missouri</p>
-            <h1 className="text-6xl font-light text-stone-900 leading-tight mb-5">Tim Mattingly</h1>
-            <p className="text-2xl text-stone-600 font-light leading-relaxed mb-3">
+            <h1 className="text-4xl md:text-6xl font-light text-stone-900 leading-tight mb-5">Tim Mattingly</h1>
+            <p className="text-xl md:text-2xl text-stone-600 font-light leading-relaxed mb-3">
               Technology executive. 30 years building companies, leading teams, and shipping products.
             </p>
-            <p className="text-lg text-stone-500 leading-relaxed max-w-xl mb-8">
+            <p className="text-base md:text-lg text-stone-500 leading-relaxed max-w-xl mb-8">
               Open to full-time leadership, fractional executive, and strategic advisory roles.
             </p>
-            <div className="flex items-center gap-4">
-              <Link href="/experience" className="inline-flex items-center gap-2 bg-stone-900 text-white px-7 py-3.5 text-base font-medium hover:bg-stone-700 transition-colors">
+            <div className="flex flex-wrap items-center gap-3 md:gap-4">
+              <Link href="/experience" className="inline-flex items-center gap-2 bg-stone-900 text-white px-6 md:px-7 py-3 md:py-3.5 text-sm md:text-base font-medium hover:bg-stone-700 transition-colors">
                 View experience
               </Link>
-              <a href="https://calendly.com/timmattingly" className="inline-flex items-center gap-2 border border-stone-300 text-stone-700 px-7 py-3.5 text-base font-medium hover:border-stone-900 transition-colors">
+              <a href="https://calendly.com/timmattingly" className="inline-flex items-center gap-2 border border-stone-300 text-stone-700 px-6 md:px-7 py-3 md:py-3.5 text-sm md:text-base font-medium hover:border-stone-900 transition-colors">
                 Schedule a call
               </a>
             </div>
           </div>
-          <div>
+          <div className="order-1 md:order-2">
             <HeroSlideshow />
           </div>
         </div>
@@ -80,8 +80,8 @@ export default function Home() {
       </section>
 
       {/* What I bring — clickable cards */}
-      <section className="max-w-6xl mx-auto px-8 py-6 border-t border-stone-100">
-        <div className="grid grid-cols-3 gap-px bg-stone-200">
+      <section className="max-w-6xl mx-auto px-4 md:px-8 py-6 border-t border-stone-100">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-stone-200">
           <Link href="/experience" className="bg-white p-6 hover:bg-stone-50 transition-colors group">
             <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-3">Enterprise Leadership</p>
             <p className="text-base text-stone-600 leading-relaxed">

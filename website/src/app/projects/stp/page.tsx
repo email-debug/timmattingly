@@ -4,21 +4,21 @@ import { assets } from '@/lib/assets';
 
 export default function STPProject() {
   return (
-    <div className="max-w-6xl mx-auto px-8 pt-16 pb-24">
+    <div className="max-w-6xl mx-auto px-4 md:px-8 pt-12 md:pt-16 pb-16 md:pb-24">
       {/* Breadcrumb */}
       <Link href="/projects" className="text-sm text-stone-400 hover:text-stone-600 transition-colors mb-8 inline-block">
         ← Projects
       </Link>
 
       {/* Header */}
-      <div className="grid grid-cols-2 gap-16 mb-16 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 mb-12 md:mb-16 md:items-center">
         <div>
           <div className="flex items-center mb-6">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={assets.logo('STP Logo.png')} alt="Smarter Travel Planner" style={{ width: '240px', height: 'auto' }} />
+            <img src={assets.logo('STP Logo.png')} alt="Smarter Travel Planner" style={{ width: '240px', maxWidth: '100%', height: 'auto' }} />
           </div>
-          <h1 className="text-4xl font-light text-stone-900 mb-4">AI-Built Travel Planning SaaS</h1>
-          <p className="text-lg text-stone-500 font-light leading-relaxed mb-6">
+          <h1 className="text-3xl md:text-4xl font-light text-stone-900 mb-4">AI-Built Travel Planning SaaS</h1>
+          <p className="text-base md:text-lg text-stone-500 font-light leading-relaxed mb-6">
             A full production web application — built, tested, and deployed entirely by AI agents
             without a single line of hand-written code.
           </p>
@@ -43,7 +43,7 @@ export default function STPProject() {
       </div>
 
       {/* What it is */}
-      <div className="grid grid-cols-3 gap-12 mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-12 md:mb-16">
         <div>
           <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-3">What it does</p>
           <p className="text-base text-stone-600 leading-relaxed">
@@ -72,9 +72,9 @@ export default function STPProject() {
       </div>
 
       {/* Tech stack */}
-      <div className="border-t border-stone-200 pt-12 mb-16">
+      <div className="border-t border-stone-200 pt-10 md:pt-12 mb-12 md:mb-16">
         <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-6">Technology Stack</p>
-        <div className="grid grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
           <div>
             <p className="text-sm font-medium text-stone-700 mb-2">Frontend</p>
             <ul className="text-sm text-stone-500 space-y-1">
@@ -115,9 +115,9 @@ export default function STPProject() {
       </div>
 
       {/* Key features */}
-      <div className="border-t border-stone-200 pt-12 mb-16">
+      <div className="border-t border-stone-200 pt-10 md:pt-12 mb-12 md:mb-16">
         <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-6">Key Features</p>
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {[
             { title: 'AI Concierge', desc: 'Conversational travel assistant that understands your trip context, preferences, and constraints. Every response includes clickable options for easy exploration.' },
             { title: 'Interactive Maps', desc: 'Google Maps integration with real-time place data, custom markers, and visual trip planning directly on the map.' },
@@ -138,7 +138,7 @@ export default function STPProject() {
       </div>
 
       {/* CTA */}
-      <div className="border-t border-stone-200 pt-12 flex items-center justify-between">
+      <div className="border-t border-stone-200 pt-10 md:pt-12 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <Link href="/projects/build-engine" className="text-sm text-stone-600 hover:text-stone-900 transition-colors">
           See how it was built — the AI Orchestration Engine →
         </Link>

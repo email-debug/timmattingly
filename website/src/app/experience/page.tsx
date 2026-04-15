@@ -3,22 +3,22 @@ import { assets } from '@/lib/assets';
 
 export default function Experience() {
   return (
-    <div className="max-w-6xl mx-auto px-8 pt-16 pb-24">
+    <div className="max-w-6xl mx-auto px-4 md:px-8 pt-12 md:pt-16 pb-16 md:pb-24">
       {/* Header */}
-      <div className="grid mb-16 items-center" style={{ gridTemplateColumns: '40% 60%', gap: '4rem' }}>
+      <div className="grid md:grid-cols-[40%_60%] gap-8 md:gap-16 mb-12 md:mb-16 md:items-center">
         <div>
           <p className="text-sm font-medium text-stone-400 tracking-widest uppercase mb-4">Experience</p>
-          <h1 className="text-5xl font-light text-stone-900 mb-5">30 years of building</h1>
-          <p className="text-lg text-stone-600 font-light mb-1">From Startups to Fortune 25</p>
-          <p className="text-lg text-stone-600 font-light mb-1">Experienced Leader, MBA, Electrical Engineer</p>
-          <p className="text-lg text-stone-500 font-light mb-8">Available for full-time leadership, fractional executive and strategic advisory.</p>
+          <h1 className="text-3xl md:text-5xl font-light text-stone-900 mb-5">30 years of building</h1>
+          <p className="text-base md:text-lg text-stone-600 font-light mb-1">From Startups to Fortune 25</p>
+          <p className="text-base md:text-lg text-stone-600 font-light mb-1">Experienced Leader, MBA, Electrical Engineer</p>
+          <p className="text-base md:text-lg text-stone-500 font-light mb-8">Available for full-time leadership, fractional executive and strategic advisory.</p>
           <a href={assets.doc('resume.pdf')} className="inline-flex items-center gap-2 text-base text-stone-500 hover:text-stone-900 transition-colors">
             Download resume (PDF) →
           </a>
         </div>
 
         {/* Credential strip */}
-        <div className="border-l border-stone-200 pl-12 flex flex-col gap-5">
+        <div className="md:border-l border-stone-200 md:pl-12 flex flex-col gap-5">
           <div className="flex items-baseline gap-4">
             <p className="text-2xl font-light text-stone-900 whitespace-nowrap w-36 shrink-0">Fortune 25</p>
             <p className="text-sm text-stone-400 leading-snug">Centene Corporation — $144B revenue</p>
@@ -39,9 +39,9 @@ export default function Experience() {
       </div>
 
       {/* Currently */}
-      <div className="mb-16">
+      <div className="mb-12 md:mb-16">
         <p className="text-sm font-medium text-stone-400 tracking-widest uppercase mb-6">Currently</p>
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="border-t border-stone-200 pt-4">
             <div className="h-8 flex items-center mb-3">
               <Image src={assets.logo('biostl.svg')} alt="BioSTL" width={80} height={28} style={{ height: '28px', width: 'auto' }} />
@@ -72,11 +72,11 @@ export default function Experience() {
       </div>
 
       {/* Prior Experience */}
-      <div className="space-y-0 mb-20">
+      <div className="space-y-0 mb-12 md:mb-20">
         <p className="text-sm font-medium text-stone-400 tracking-widest uppercase mb-0">Prior Experience</p>
 
         {/* BioSTL */}
-        <div className="grid grid-cols-4 gap-8 py-7 border-t border-stone-200">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8 py-7 border-t border-stone-200">
           <div className="space-y-4">
             <div className="h-12 flex items-center">
               <Image src={assets.logo('biostl.svg')} alt="BioSTL" width={100} height={48} style={{ height: '40px', width: 'auto' }} />
@@ -90,7 +90,7 @@ export default function Experience() {
               <p className="text-sm text-stone-400">2023 – Present</p>
             </div>
           </div>
-          <div className="col-span-3">
+          <div className="md:col-span-3">
             <p className="text-lg font-medium text-stone-700 mb-3">Head of Innovation Advisory · Executive Advisor · Entrepreneur in Residence</p>
             <p className="text-sm text-stone-400 mb-4 italic">BioSTL / Biogenerator — St. Louis&apos;s leading life sciences and digital health accelerator</p>
             <ul className="space-y-2 text-base text-stone-600 leading-relaxed">
@@ -106,14 +106,14 @@ export default function Experience() {
         </div>
 
         {/* Centene */}
-        <div className="grid grid-cols-4 gap-8 py-7 border-t border-stone-200">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8 py-7 border-t border-stone-200">
           <div className="space-y-4">
             <div className="h-12 flex items-center">
               <Image src={assets.logo('centene.svg')} alt="Centene Corporation" width={180} height={48} style={{ height: '40px', width: 'auto' }} />
             </div>
             <p className="text-base text-stone-400">2018 – 2023</p>
           </div>
-          <div className="col-span-3">
+          <div className="md:col-span-3">
             <p className="text-lg font-medium text-stone-700 mb-3">Senior Director, Enterprise Innovation</p>
             <ul className="space-y-2 text-base text-stone-600 leading-relaxed">
               <li>Led company-wide COVID-19 customer outreach to 25 million members — consolidated phone, email, and text channels across all markets and all lines of business for the first time in company history. Enterprise-wide launch in under 60 days</li>
@@ -127,14 +127,14 @@ export default function Experience() {
         </div>
 
         {/* Mastercard */}
-        <div className="grid grid-cols-4 gap-8 py-7 border-t border-stone-200">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8 py-7 border-t border-stone-200">
           <div className="space-y-4">
             <div className="h-12 flex items-center">
               <Image src={assets.logo('mastercard.svg')} alt="Mastercard" width={240} height={60} style={{ height: '56px', width: 'auto' }} />
             </div>
             <p className="text-base text-stone-400">2011 – 2018</p>
           </div>
-          <div className="col-span-3">
+          <div className="md:col-span-3">
             <p className="text-lg font-medium text-stone-700 mb-1">Conceived and built the foundations of 5 product lines · 3 patents</p>
             <p className="text-sm text-stone-400 mb-3">VP of Enterprise Partnerships · VP of Product Development · VP of Technology</p>
             <ul className="space-y-2 text-base text-stone-600 leading-relaxed">
@@ -149,14 +149,14 @@ export default function Experience() {
         </div>
 
         {/* Equilliance */}
-        <div className="grid grid-cols-4 gap-8 py-7 border-t border-stone-200">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8 py-7 border-t border-stone-200">
           <div className="space-y-4">
             <div className="h-12 flex items-center">
               <Image src={assets.logo('Equilliance.png')} alt="Equilliance Companies" width={180} height={93} style={{ height: '40px', width: 'auto' }} />
             </div>
             <p className="text-base text-stone-400">2003 – 2011</p>
           </div>
-          <div className="col-span-3">
+          <div className="md:col-span-3">
             <p className="text-lg font-medium text-stone-700 mb-3">President & Founder</p>
             <ul className="space-y-2 text-base text-stone-600 leading-relaxed mb-5">
               <li>Founded and grew a technology services company to 300+ employees across 5 subsidiaries</li>
@@ -169,14 +169,14 @@ export default function Experience() {
         </div>
 
         {/* United Mortgage Partners */}
-        <div className="grid grid-cols-4 gap-8 py-7 border-t border-stone-200">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8 py-7 border-t border-stone-200">
           <div className="space-y-4">
             <div className="h-12 flex items-center">
               <Image src={assets.logo('ump.png')} alt="United Mortgage Partners" width={220} height={48} style={{ height: '32px', width: 'auto' }} />
             </div>
             <p className="text-base text-stone-400">2009 – 2011</p>
           </div>
-          <div className="col-span-3">
+          <div className="md:col-span-3">
             <p className="text-lg font-medium text-stone-700 mb-3">President & Founder</p>
             <ul className="space-y-2 text-base text-stone-600 leading-relaxed">
               <li>Originated the idea for a new business model concept to support changing regulatory landscape</li>
@@ -187,30 +187,30 @@ export default function Experience() {
 
         {/* Early career — Sypris, EY, Berg */}
         <div className="border-t border-stone-200 pt-5 pb-2 space-y-4">
-          <div className="grid grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-8">
             <div className="flex items-center gap-4">
               <Image src={assets.logo('sypris.jpg')} alt="Sypris Electronics" width={130} height={40} className="h-8 w-auto shrink-0" />
               <p className="text-sm text-stone-400 whitespace-nowrap">1999 – 2003</p>
             </div>
-            <div className="col-span-3 flex items-center">
+            <div className="md:col-span-3 flex items-center">
               <p className="text-base text-stone-600 leading-relaxed">Led the consolidation of IT services across 6 subsidiaries. Managed nationwide IT staff of 60.</p>
             </div>
           </div>
-          <div className="grid grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-8">
             <div className="flex items-center gap-4">
               <Image src={assets.logo('ey.svg')} alt="EY" width={70} height={40} className="h-9 w-auto shrink-0" />
               <p className="text-sm text-stone-400 whitespace-nowrap">1998 – 1999</p>
             </div>
-            <div className="col-span-3 flex items-center">
+            <div className="md:col-span-3 flex items-center">
               <p className="text-base text-stone-600 leading-relaxed">Mid market IT strategy consulting. Offered jobs by 3 clients.</p>
             </div>
           </div>
-          <div className="grid grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-8">
             <div className="flex items-center gap-4">
               <Image src={assets.logo('berg.jpg')} alt="Berg Electronics" width={160} height={48} className="h-10 w-auto shrink-0" />
               <p className="text-sm text-stone-400 whitespace-nowrap">1994 – 1998</p>
             </div>
-            <div className="col-span-3 flex items-center">
+            <div className="md:col-span-3 flex items-center">
               <p className="text-base text-stone-600 leading-relaxed">Progressed from entry level to global technology leadership in 4 years.</p>
             </div>
           </div>
@@ -218,7 +218,7 @@ export default function Experience() {
       </div>
 
       {/* Advisory Clients */}
-      <div className="mb-20">
+      <div className="mb-12 md:mb-20">
         <div className="flex items-center gap-4 mb-3">
           <p className="text-sm font-medium text-stone-400 tracking-widest uppercase">Advisory Clients</p>
           <span className="text-sm text-stone-300">via</span>
@@ -252,7 +252,7 @@ export default function Experience() {
       </div>
 
       {/* Education + Patents side by side */}
-      <div className="grid grid-cols-2 gap-16 border-t border-stone-200 pt-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 border-t border-stone-200 pt-12 md:pt-16">
         {/* Education */}
         <div>
           <p className="text-sm font-medium text-stone-400 tracking-widest uppercase mb-8">Education</p>

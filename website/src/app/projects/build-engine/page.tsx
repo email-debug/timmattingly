@@ -2,17 +2,17 @@ import Link from 'next/link';
 
 export default function BuildEngineProject() {
   return (
-    <div className="max-w-6xl mx-auto px-8 pt-16 pb-24">
+    <div className="max-w-6xl mx-auto px-4 md:px-8 pt-12 md:pt-16 pb-16 md:pb-24">
       {/* Breadcrumb */}
       <Link href="/projects" className="text-sm text-stone-400 hover:text-stone-600 transition-colors mb-8 inline-block">
         ← Projects
       </Link>
 
       {/* Header */}
-      <div className="mb-16">
+      <div className="mb-12 md:mb-16">
         <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-4">AI Infrastructure</p>
-        <h1 className="text-4xl font-light text-stone-900 mb-4">AI Vibe Coding CI/CD Engine</h1>
-        <p className="text-xl text-stone-500 font-light leading-relaxed max-w-3xl">
+        <h1 className="text-3xl md:text-4xl font-light text-stone-900 mb-4">AI Vibe Coding CI/CD Engine</h1>
+        <p className="text-lg md:text-xl text-stone-500 font-light leading-relaxed max-w-3xl">
           A fully autonomous CI/CD orchestration system that manages AI coding agents building
           production software. It coordinates multiple agents working in parallel — handling
           work decomposition, isolation, monitoring, failure recovery, and deployment.
@@ -20,10 +20,10 @@ export default function BuildEngineProject() {
       </div>
 
       {/* The Problem */}
-      <div className="grid grid-cols-2 gap-16 mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 mb-12 md:mb-16">
         <div>
           <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-4">The Problem</p>
-          <h2 className="text-2xl font-light text-stone-900 mb-4">AI agents are powerful but unreliable</h2>
+          <h2 className="text-xl md:text-2xl font-light text-stone-900 mb-4">AI agents are powerful but unreliable</h2>
           <p className="text-base text-stone-600 leading-relaxed">
             Anyone who has used an LLM coding agent for more than a trivial task knows the failure modes.
             Building production software with AI requires solving all of these simultaneously.
@@ -49,10 +49,10 @@ export default function BuildEngineProject() {
       </div>
 
       {/* The Insight */}
-      <div className="border-t border-stone-200 pt-12 mb-16">
+      <div className="border-t border-stone-200 pt-10 md:pt-12 mb-12 md:mb-16">
         <div className="max-w-3xl">
           <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-4">The Insight</p>
-          <p className="text-xl text-stone-700 font-light leading-relaxed mb-4">
+          <p className="text-lg md:text-xl text-stone-700 font-light leading-relaxed mb-4">
             Treat AI agents like unreliable distributed workers in a fault-tolerant system — the same
             way you&apos;d design for unreliable network nodes or crash-prone processes.
           </p>
@@ -66,9 +66,9 @@ export default function BuildEngineProject() {
       </div>
 
       {/* How It Works — 4 pillars */}
-      <div className="border-t border-stone-200 pt-12 mb-16">
+      <div className="border-t border-stone-200 pt-10 md:pt-12 mb-12 md:mb-16">
         <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-8">How It Works</p>
-        <div className="grid grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12">
 
           {/* Bead Abstraction */}
           <div>
@@ -84,7 +84,7 @@ export default function BuildEngineProject() {
               most reliable window. If one fails, the cost is minimal — stall it, clean up, let a fresh
               agent retry. Fresh context is cheaper than spinning.
             </p>
-            <div className="bg-stone-50 rounded p-4 text-xs font-mono text-stone-600 space-y-0.5">
+            <div className="bg-stone-50 rounded p-4 text-xs font-mono text-stone-600 space-y-0.5 overflow-x-auto whitespace-nowrap">
               <p>PSO-01: Add packing list data model &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;┐</p>
               <p>PSO-02: Build packing list UI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;┤ Phase 1</p>
               <p>PSO-03: Add shopping integration &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;┤ (parallel)</p>
@@ -177,10 +177,10 @@ export default function BuildEngineProject() {
       </div>
 
       {/* Workspace Isolation */}
-      <div className="border-t border-stone-200 pt-12 mb-16">
+      <div className="border-t border-stone-200 pt-10 md:pt-12 mb-12 md:mb-16">
         <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-4">Workspace Isolation</p>
-        <div className="grid grid-cols-3 gap-8">
-          <div className="col-span-2">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          <div className="md:col-span-2">
             <p className="text-base text-stone-600 leading-relaxed mb-4">
               Each agent gets an isolated git worktree with its own Docker container running
               Vite (frontend) and Express (backend) on unique port pairs. The slot pool has 10 positions,
@@ -212,9 +212,9 @@ export default function BuildEngineProject() {
       </div>
 
       {/* The Ship Layer */}
-      <div className="border-t border-stone-200 pt-12 mb-16">
+      <div className="border-t border-stone-200 pt-10 md:pt-12 mb-12 md:mb-16">
         <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-6">Deployment Pipeline</p>
-        <div className="flex items-center justify-between max-w-3xl">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 max-w-3xl">
           {[
             { env: 'main', desc: 'Working branch. Bead merges accumulate here.' },
             { env: 'dev', desc: 'First deployed environment. Cloud Build triggered.' },
@@ -222,21 +222,21 @@ export default function BuildEngineProject() {
             { env: 'prod', desc: 'Live. Requires Tim\'s explicit approval.' },
           ].map((e, i) => (
             <div key={e.env} className="flex items-center gap-4">
-              <div className="text-center">
+              <div className="md:text-center">
                 <p className="text-sm font-medium text-stone-700">{e.env}</p>
-                <p className="text-xs text-stone-400 max-w-28">{e.desc}</p>
+                <p className="text-xs text-stone-400 md:max-w-28">{e.desc}</p>
               </div>
-              {i < 3 && <span className="text-stone-300 text-lg">→</span>}
+              {i < 3 && <span className="text-stone-300 text-lg hidden md:inline">→</span>}
             </div>
           ))}
         </div>
       </div>
 
       {/* Learnings */}
-      <div className="border-t border-stone-200 pt-12 mb-16">
+      <div className="border-t border-stone-200 pt-10 md:pt-12 mb-12 md:mb-16">
         <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-4">What I Learned</p>
-        <h2 className="text-2xl font-light text-stone-900 mb-8">After 40+ epics, several patterns emerged</h2>
-        <div className="grid grid-cols-2 gap-8">
+        <h2 className="text-xl md:text-2xl font-light text-stone-900 mb-8">After 40+ epics, several patterns emerged</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {[
             { title: 'Fresh context solves most failures', body: 'When an agent fails, the instinct is to debug. The better strategy is to stall and let a fresh agent try. Agent failures are rarely deterministic. The retry loop has a remarkably high success rate on second attempts.' },
             { title: 'Rules must be repeated, not just stated', body: 'An instruction in the system prompt works for the first 10 minutes. By minute 30, it\'s been deprioritized. The heartbeat reminder system exists because "tell them once" doesn\'t work.' },
@@ -254,9 +254,9 @@ export default function BuildEngineProject() {
       </div>
 
       {/* The Human Role */}
-      <div className="border-t border-stone-200 pt-12 mb-16">
+      <div className="border-t border-stone-200 pt-10 md:pt-12 mb-12 md:mb-16">
         <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-4">The Human Role</p>
-        <div className="grid grid-cols-2 gap-16 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start">
           <div>
             <p className="text-base text-stone-600 leading-relaxed mb-4">
               Tim is not a programmer. He&apos;s a technical leader who orchestrates AI agents.
@@ -288,7 +288,7 @@ export default function BuildEngineProject() {
       </div>
 
       {/* Bottom */}
-      <div className="border-t border-stone-200 pt-12 flex items-center justify-between">
+      <div className="border-t border-stone-200 pt-10 md:pt-12 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <Link href="/projects/stp" className="text-sm text-stone-600 hover:text-stone-900 transition-colors">
           ← See what it built — Smarter Travel Planner
         </Link>

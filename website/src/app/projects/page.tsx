@@ -2,21 +2,21 @@ import Link from 'next/link';
 
 export default function Projects() {
   return (
-    <div className="max-w-6xl mx-auto px-8 pt-16 pb-24">
+    <div className="max-w-6xl mx-auto px-4 md:px-8 pt-12 md:pt-16 pb-16 md:pb-24">
       {/* Header */}
-      <div className="mb-16">
+      <div className="mb-12 md:mb-16">
         <p className="text-sm font-medium text-stone-400 tracking-widest uppercase mb-4">Projects</p>
-        <h1 className="text-5xl font-light text-stone-900 mb-4">What I&apos;ve built</h1>
-        <p className="text-xl text-stone-500 font-light leading-relaxed max-w-2xl">
+        <h1 className="text-3xl md:text-5xl font-light text-stone-900 mb-4">What I&apos;ve built</h1>
+        <p className="text-lg md:text-xl text-stone-500 font-light leading-relaxed max-w-2xl">
           Two active projects that demonstrate how AI-native development works in practice —
           not as a concept, but as shipped, running software.
         </p>
       </div>
 
       {/* Project cards */}
-      <div className="grid grid-cols-2 gap-px bg-stone-200">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-stone-200">
         {/* STP */}
-        <div className="bg-white p-10 flex flex-col">
+        <div className="bg-white p-6 md:p-10 flex flex-col">
           <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-6">Production SaaS</p>
           <h2 className="text-2xl font-light text-stone-900 mb-4">Smarter Travel Planner</h2>
           <p className="text-base text-stone-600 leading-relaxed mb-6">
@@ -49,7 +49,7 @@ export default function Projects() {
         </div>
 
         {/* Orchestration Engine */}
-        <div className="bg-white p-10 flex flex-col">
+        <div className="bg-white p-6 md:p-10 flex flex-col">
           <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-6">AI Infrastructure</p>
           <h2 className="text-2xl font-light text-stone-900 mb-4">AI Vibe Coding CI/CD Engine</h2>
           <p className="text-base text-stone-600 leading-relaxed mb-6">
