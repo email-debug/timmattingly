@@ -8,13 +8,13 @@ export default function Projects() {
         <p className="text-sm font-medium text-stone-400 tracking-widest uppercase mb-4">Projects</p>
         <h1 className="text-5xl font-light text-stone-900 mb-4">What I&apos;ve built</h1>
         <p className="text-xl text-stone-500 font-light leading-relaxed max-w-2xl">
-          Two active projects that demonstrate how AI-native development works in practice —
+          Active projects that demonstrate how AI-native development works in practice —
           not as a concept, but as shipped, running software.
         </p>
       </div>
 
       {/* Project cards */}
-      <div className="grid grid-cols-2 gap-px bg-stone-200">
+      <div className="grid grid-cols-3 gap-px bg-stone-200">
         {/* STP */}
         <div className="bg-white p-10 flex flex-col">
           <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-6">Production SaaS</p>
@@ -44,6 +44,39 @@ export default function Projects() {
             </Link>
             <a href="https://smartertravelplanner.com" target="_blank" rel="noopener noreferrer" className="text-sm text-stone-400 hover:text-stone-700 transition-colors">
               smartertravelplanner.com ↗
+            </a>
+          </div>
+        </div>
+
+        {/* Smart Retirement Planner */}
+        <div className="bg-white p-10 flex flex-col">
+          <p className="text-xs font-medium text-stone-400 tracking-widest uppercase mb-6">Financial Modeling</p>
+          <h2 className="text-2xl font-light text-stone-900 mb-4">Smart Retirement Planner</h2>
+          <p className="text-base text-stone-600 leading-relaxed mb-6">
+            A household retirement projector that models taxes, RMDs, Social Security, healthcare phases,
+            and Monte Carlo return variance — the parts most online calculators skip.
+          </p>
+          <div className="space-y-4 mb-8">
+            <div>
+              <p className="text-xs font-medium text-stone-400 uppercase mb-2">The point</p>
+              <p className="text-base text-stone-600 leading-relaxed">
+                Built as a CFO-grade model in the browser. Edit a scenario, re-run thousands of
+                simulated market paths in seconds, and see the range of outcomes — not just the median.
+              </p>
+            </div>
+            <div>
+              <p className="text-xs font-medium text-stone-400 uppercase mb-2">Stack</p>
+              <p className="text-base text-stone-500">
+                React · TypeScript · Recharts · Web Workers · GCP Cloud Run
+              </p>
+            </div>
+          </div>
+          <div className="mt-auto border-t border-stone-100 pt-6 flex items-center justify-between">
+            <Link href="/projects/retirement" className="text-sm text-stone-600 hover:text-stone-900 transition-colors">
+              Learn more →
+            </Link>
+            <a href="https://retire.springlakeservices.com" target="_blank" rel="noopener noreferrer" className="text-sm text-stone-400 hover:text-stone-700 transition-colors">
+              retire.springlakeservices.com ↗
             </a>
           </div>
         </div>
@@ -89,6 +122,16 @@ export default function Projects() {
         <p className="text-base text-stone-400">
           The gap between &ldquo;AI can write code&rdquo; and &ldquo;AI can ship features reliably&rdquo; is an engineering problem.
           These projects are my answer to it.
+        </p>
+      </div>
+
+      {/* Spring Lake Services note */}
+      <div className="mt-6 text-center">
+        <p className="text-sm text-stone-400">
+          See all ventures at{' '}
+          <a href="https://springlakeservices.com" target="_blank" rel="noopener noreferrer" className="text-stone-500 hover:text-stone-700 underline underline-offset-4">
+            springlakeservices.com
+          </a>
         </p>
       </div>
     </div>

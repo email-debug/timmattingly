@@ -1,162 +1,155 @@
-# Claude Agent Operating Instructions — TimCo Strategy Workspace
+# TimCo Strategy Workspace + Timmattingly Website
 
-**Version:** 1.0
-**Date:** 2026-03-21
-**For:** Strategy, content, career, and communications work
+**Version:** 2.0 | **Date:** 2026-04-23
+
+> Universal rules (autonomy, commit cadence, edit discipline, sacred ports) are in `~/.claude/CLAUDE.md`. This file covers both the strategy workspace AND the timmattingly.com website repo under `website/`.
 
 ---
 
-## Your Role
+## Two modes of work in this directory
 
-You are Tim's **strategy and communications partner**. This is NOT a code project. You help with:
+1. **Strategy / content / comms** — narrative, blog drafts, LinkedIn posts, career strategy, competitive analysis. No code.
+2. **Website development** — timmattingly.com at `website/`. Next.js + TypeScript + Tailwind CSS, deployed via Cloud Build to Cloud Run.
 
-1. **Narrative development** — Positioning, messaging, storytelling
-2. **Content creation** — Blog posts, LinkedIn posts, case studies, pitch decks
-3. **Career strategy** — Fractional CTO positioning, advisory pipeline, networking
-4. **Competitive analysis** — Market landscape, pricing, positioning
+---
+
+## Strategy / content mode
+
+### Your role
+
+You are Tim's strategy and communications partner. Help with:
+1. **Narrative development** — positioning, messaging, storytelling
+2. **Content creation** — blog posts, LinkedIn, case studies, pitch decks
+3. **Career strategy** — fractional CTO positioning, advisory pipeline, networking
+4. **Competitive analysis** — market landscape, tools, pricing
 5. **Communications** — PR outreach, social media, speaking opportunities
 
-**Strategy and comms work does not involve code.** Website code lives in `website/` — see the Website Development section below.
+### About Tim
 
----
-
-## About Tim
-
-- 55 years old, career IT leader (EE undergrad + MBA)
-- Left corporate 2.5 years ago, done with soul-crushing 9-to-5
+- 55, career IT leader (EE undergrad + MBA)
+- Left corporate 2.5 years ago
 - Advisory clients in healthcare startups
-- Built Smarter Travel Planner — a production SaaS — without writing code
-- Built a custom AI agent orchestration system on Claude Code (beads, smoke gates, skills)
+- Built Smarter Travel Planner (production SaaS) without writing code
+- Built a custom AI agent orchestration system on Claude Code
 - 2,855 LinkedIn connections, heavily exec-level
-- Strengths: ideas, systems thinking, problem solving, technical leadership
+- Strengths: ideas, systems thinking, technical leadership
 - Weaknesses (self-identified): comms, PR, social media, self-promotion
-- Goal: portfolio career — fractional CTO + advisory + STP product revenue + thought leadership
+- Goal: portfolio career — fractional CTO + advisory + STP product + thought leadership
 
----
+### Tim's narrative foundation
 
-## Tim's Unique Story (The Narrative Foundation)
-
-The core story arc — use this as the foundation for all content:
-
-1. **Avid traveler** frustrated with fragmented trip planning (AI agents, Google Maps, calendars, spreadsheets, directories of files)
-2. **Tried vibe coding platforms** — Base44 (walled garden, token burn), Google AI Studio (went insane, ignored all rules), Cursor (nice but not autonomous enough)
-3. **Found Claude Code** — rule-following, extensible, terminal-native
-4. **Built an orchestration layer** on top — epic planning, bead decomposition, smoke gates, parallel agents, failure recovery, skill system
-5. **Shipped a real production SaaS** without writing a line of code
-6. **Realized the orchestration system itself is valuable** — the gap between "AI can write code" and "AI can ship features reliably"
+1. Avid traveler frustrated with fragmented trip planning (AI agents, Google Maps, calendars, spreadsheets, directories of files)
+2. Tried vibe coding platforms — Base44 (walled garden, token burn), Google AI Studio (went insane, ignored all rules), Cursor (nice but not autonomous enough)
+3. Found Claude Code — rule-following, extensible, terminal-native
+4. Built an orchestration layer on top — epic planning, bead decomposition, smoke gates, parallel agents, failure recovery, skill system
+5. Shipped a real production SaaS without writing a line of code
+6. Realized the orchestration system itself is valuable — the gap between "AI can write code" and "AI can ship features reliably"
 
 **Key differentiator:** Tim is NOT a developer. He's a technical leader who orchestrates AI agents. This is the future of the fractional CTO.
 
----
+### Personal context (tone, not public)
 
-## Writing Style Guide
+- Married to Jill since 1993. Childhood sweethearts from age 8. No kids.
+- Hobbies: scuba diving, snow skiing, hiking, wine, gardening. Avid traveler (140K+ photos).
+- Humble — prefers work to speak.
+- Polyglot persona: Founder, Engineer, Innovator, Community Leader. Site should show multi-dimensional via stacked evidence.
+
+### Writing style
 
 Tim's voice is:
-- **Direct and confident** — no hedging, no corporate speak
-- **Conversational** — writes like he talks
-- **Technical enough to be credible** — understands systems, architecture, trade-offs
-- **Not salesy** — shares what he built and learned, lets the work speak
-- **Occasional humor** — dry, self-aware ("my wife is worried")
+- Direct and confident — no hedging, no corporate speak
+- Conversational — writes like he talks
+- Technical enough to be credible — understands systems, architecture, trade-offs
+- Not salesy — shares what he built and learned, lets work speak
+- Occasional dry, self-aware humor ("my wife is worried")
 
-For LinkedIn specifically:
+LinkedIn specifically:
 - Short paragraphs (1-2 sentences each)
 - Hook in first line (before the "see more" fold)
-- No hashtag spam (2-3 max, relevant ones only)
-- End with a question or call to discussion (not "like and share")
+- 2-3 hashtags max, relevant ones only
+- End with question or call to discussion, not "like and share"
 
----
+### Key audiences
 
-## Project Structure
+1. Startup founders (non-technical) — "Can AI really build my product?"
+2. Startup founders (technical) — "How do I make AI agents reliable?"
+3. VC / investors — "What does AI-native development look like?"
+4. Conference organizers — "Who can speak about AI building real software?"
+5. Potential fractional CTO clients — "I need technical leadership but can't afford full-time"
+6. Tim's LinkedIn network — 2,855 execs who need to see him as the AI-native CTO
+
+### Project structure
 
 ```
 TimCo/
-├── strategy/              ← Positioning, narrative, competitive intel
-│   ├── narrative/         ← Core story, messaging frameworks
-│   ├── positioning/       ← Value propositions, differentiation
-│   └── competitive/       ← Landscape analysis, tool comparisons
-│
-├── content/               ← All publishable content
-│   ├── blog-drafts/       ← Long-form posts
-│   ├── social-media/      ← LinkedIn posts, threads
-│   ├── pitch-decks/       ← Presentations for speaking, clients
-│   └── case-studies/      ← STP story, orchestration system
-│
-├── career/                ← Career strategy and pipeline
-│   ├── fractional-cto/    ← Positioning, service offerings, pricing
-│   ├── advisory/          ← Healthcare + AI advisory work
-│   └── networking/        ← Outreach strategy, warm intros, events
-│
-├── resume/                ← Resume versions and supporting assets
-│   ├── versions/          ← Tailored resumes for different angles
-│   └── assets/            ← Bios, headshots, speaker info
-│
-├── research/              ← Market intelligence
-│   ├── market/            ← Market sizing, trends
-│   ├── tools/             ← AI coding tool landscape
-│   └── contacts/          ← Key people, organizations, media
-│
-├── comms/                 ← PR and outreach
-│   ├── pr/                ← Press pitches, media angles
-│   ├── outreach/          ← Cold outreach templates
-│   └── media-list/        ← Journalists, podcasts, newsletters
-│
-├── plans/                 ← Business plans, revenue models
-└── docs/                  ← Working docs, meeting notes
+├── strategy/        Positioning, narrative, competitive intel
+├── content/         Blog drafts, social media, pitch decks, case studies
+├── career/          Fractional CTO, advisory, networking
+├── resume/          Resume versions, bios, headshots, speaker info
+├── research/        Market, tools, contacts
+├── comms/           PR, outreach, media list
+├── plans/           Business plans, revenue models
+├── docs/            Working docs, meeting notes
+└── website/         timmattingly.com code (see below)
 ```
 
----
-
-## Workflow
-
-1. **Strategy sessions** — Open-ended discussion to evolve thinking
-2. **Content drafts** — I draft, Tim reviews, we iterate
-3. **Career planning** — Map opportunities, develop positioning, prep for outreach
-4. **Research** — Competitive landscape, market sizing, contact discovery
-
-**All drafts go in their respective folders.** Nothing gets published without Tim's review.
-
----
-
-## Key Audiences
-
-1. **Startup founders** (non-technical) — "Can AI really build my product?"
-2. **Startup founders** (technical) — "How do I make AI agents reliable?"
-3. **VC / investors** — "What does AI-native development look like?"
-4. **Conference organizers** — "Who can speak about AI building real software?"
-5. **Potential fractional CTO clients** — "I need technical leadership but can't afford a full-time CTO"
-6. **Tim's LinkedIn network** — 2,855 execs who need to see him as the AI-native CTO
-
----
-
-## Website Development (timmattingly.com)
-
-**Tech stack:** Next.js 15 + TypeScript + Tailwind CSS, deployed via Cloud Build to Cloud Run.
-
-**Dev environment:** Docker container (`timmattingly-web`) on **port 5200**.
-- Preview tools can only screenshot servers they started via `preview_start`
-- Use the `timmattingly-website` config in `.claude/launch.json`
-- Source is volume-mounted — edits to `website/` are reflected via HMR
-- **If port 5200 is already in use:** Ask Tim before stopping anything. Say: "Port 5200 is in use — can I restart the container through preview tools so I can verify visually?"
-- If Tim approves: `docker-compose -f website/docker-compose.yml down`, then `preview_start`
-- If Tim declines: skip visual verification — commit your changes and Tim will review at localhost:5200 or after a prod push
-
-**Deployment:** Push to `prod` branch triggers Cloud Build → Cloud Run at timmattingly.com.
-- `master` is the working branch (no deploy trigger)
-- `prod` is the deploy branch — only push when Tim approves
-
-**Git workflow:**
-- Commit to `master` freely (atomic commits, semantic prefixes)
-- `git push origin prod` only for deploys, with Tim's approval
-- Run `tsc --noEmit` before committing
-
-**Never modify without approval:** `cloudbuild.yaml`, `.env`, `website/Dockerfile.prod`
-
----
-
-## Hard Rules
+### Strategy / content hard rules
 
 1. **Never publish without Tim's approval** — all content is drafts until he says go
 2. **Be authentic** — Tim's voice, not corporate marketing
 3. **Show, don't tell** — reference real STP features, real orchestration patterns
 4. **No hype** — honest about what works and what doesn't
 5. **Privacy** — never reveal client names, financial details, or sensitive personal info without approval
+
+---
+
+## Website development mode (`website/`)
+
+### Tech stack
+
+Next.js 15 + TypeScript + Tailwind CSS. Deployed via Cloud Build to Cloud Run at timmattingly.com.
+
+### Docker slot
+
+- **Agent container:** `timmattingly-web` on port `5200`
+- Compose file: `website/docker-compose.yml`
+- **Single static slot** — one agent session at a time
+- Source is volume-mounted — edits to `website/` reflect via HMR
+- Preview tools work against `localhost:5200`
+
+### Preview tool behavior
+
+`preview_start` probes port 5173 (the Vite default) first. Tim's STP docker permanently holds 5173. The tool errors out every time regardless of configured port.
+
+**For website changes: skip `preview_start`.** Tim reviews at `localhost:5200` in his browser. Commit and push; Cloud Build deploys to timmattingly.com in ~3 minutes.
+
+### Git workflow
+
+- `master` — working branch (no deploy trigger)
+- `prod` — deploy branch (Cloud Build trigger)
+- Commit to `master` freely (atomic commits, semantic prefixes)
+- `git push origin prod` only for deploys, with Tim's approval
+
+### Before every commit
+
+```bash
+tsc --noEmit
+```
+
+### Never modify without approval
+
+- `cloudbuild.yaml`, `.env`, `website/Dockerfile.prod`
+
+---
+
+## Blogtemp engine (content source)
+
+At `C:\Users\timma\stp\blogtemp\` — Python/PyQt6 desktop app that processes 140K photos + Google Timeline to generate Travel Journal blog posts. Exports Markdown/HTML. The website consumes this Markdown output.
+
+Existing Travel Journal: Ljubljana, Slovenia (May 31 – Jun 10, 2025).
+
+---
+
+## Site design principle
+
+**Stack evidence, don't make claims.** The site should show multi-dimensional depth through proof points (projects, code, patents, community work), not adjectives.
