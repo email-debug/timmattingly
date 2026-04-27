@@ -125,10 +125,10 @@ Next.js 15 + TypeScript + Tailwind CSS. Deployed via Cloud Build to Cloud Run at
 
 ### Git workflow
 
-- `master` — working branch (no deploy trigger)
+- `main` — working branch (no deploy trigger)
 - `prod` — deploy branch (Cloud Build trigger)
-- Commit to `master` freely (atomic commits, semantic prefixes)
-- `git push origin prod` only for deploys, with Tim's approval
+- Commit to `main` freely (atomic commits, semantic prefixes)
+- `git push origin main:prod` only for deploys, with Tim's approval
 
 ### Before every commit
 
